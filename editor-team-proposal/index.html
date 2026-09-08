@@ -189,6 +189,18 @@ h2{font-size:clamp(24px,3.7vw,42px)}
 .sc .sn{font-family:var(--serif);font-size:clamp(17px,2vw,21px);font-weight:400;margin-bottom:6px}
 .sc p{margin:0;font-size:clamp(12px,1.3vw,13.5px);line-height:1.5;color:var(--soft)}
 .sc p b{color:var(--ink);font-weight:600}
+
+/* sources */
+.srcs{display:grid;gap:9px;margin-top:14px}
+@media (min-width:820px){.srcs{grid-template-columns:1fr 1fr}}
+.sl{border-left:2px solid var(--accent);padding:2px 0 2px 13px}
+.sl.muted{border-left-color:var(--line)}
+.sl a{display:block;font-size:clamp(12.5px,1.35vw,14px);font-weight:600;color:var(--ink);
+      text-decoration:none;border-bottom:1px solid var(--accent);width:fit-content;margin-bottom:4px}
+.sl.muted a{border-bottom-color:var(--line)}
+.sl a:hover{background:var(--accent-soft)}
+.sl span{display:block;font-size:clamp(11.5px,1.25vw,13px);line-height:1.45;color:var(--soft)}
+.sl span b{color:var(--ink)}
 </style>
 
 <div class="prog"><i id="pg"></i></div>
@@ -317,21 +329,6 @@ h2{font-size:clamp(24px,3.7vw,42px)}
           </ul>
         </div>
       </div>
-      <h4 class="oh">Where they would come from</h4>
-      <div class="src">
-        <div class="sc">
-          <div class="sn">Upwork</div>
-          <p>The deepest pool, and the one with a public track record on every profile. <b>5% client fee</b> on top of the rate.</p>
-        </div>
-        <div class="sc">
-          <div class="sn">OnlineJobs.ph</div>
-          <p><b>No per-hire fee</b>, which suits an ongoing arrangement better than a one-off booking.</p>
-        </div>
-        <div class="sc">
-          <div class="sn">Referrals</div>
-          <p>From the people we already work with. Costs nothing, and arrives part-vetted by someone whose judgement we know.</p>
-        </div>
-      </div>
       <p class="note">
         <b>No commitment to anyone before we have seen their output.</b> A trial day is cheap.
         Finding out mid-event is not.
@@ -344,7 +341,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
       <div class="eyebrow">Hiring</div>
       <h2>Six steps, deliberately light</h2>
       <div class="steps">
-        <div class="st"><span class="sn">1</span><span><h4>Source candidates.</h4> Upwork, OnlineJobs.ph and referrals &mdash; see the previous slide.</span></div>
+        <div class="st"><span class="sn">1</span><span><h4>Source candidates.</h4> Through the agency, plus referrals from people we already work with.</span></div>
         <div class="st"><span class="sn">2</span><span><h4>Sign the confidentiality agreement.</h4> Before any paid work begins. Draft in the appendix.</span></div>
         <div class="st"><span class="sn">3</span><span><h4>First interview &mdash; Dion&eacute; and Ally.</h4> Experience, availability, working style. Screening only.</span></div>
         <div class="st"><span class="sn">4</span><span><h4>Paid one-day trial.</h4> A set of clips, minimal direction. How much they finish, and how they read the assets. <b>This is the real signal.</b></span></div>
@@ -464,12 +461,20 @@ h2{font-size:clamp(24px,3.7vw,42px)}
         <div class="tr us"><div class="l">Senior<small>Improves the content, not just executes it</small></div><div class="v num">$10&ndash;15+ &middot; $80&ndash;195</div></div>
       </div>
       <p class="note">
-        <b>Where this sits.</b> Video editors on
-        <a href="https://www.upwork.com/hire/video-editors/cost/" target="_blank" rel="noopener">Upwork</a>
-        run <b>$6&ndash;25 an hour</b>. Our two tiers sit in the lower half of that &mdash; we are not
-        paying premium rates. What we are declining is the very bottom of the range, where you get
-        someone learning on our footage.
+        <b>Where this sits.</b> Video editors on Upwork run <b>$6&ndash;25 an hour</b>. Our two tiers
+        sit in the lower half of that &mdash; we are not paying premium rates. What we are declining
+        is the bottom of the range, where you get someone learning on our footage.
       </p>
+      <div class="srcs">
+        <div class="sl">
+          <a href="https://www.upwork.com/hire/video-editors/cost/" target="_blank" rel="noopener">Upwork &mdash; cost to hire a video editor</a>
+          <span>$6&ndash;25/hr on the platform. The closest match to what we would be doing: freelance, project-based, international.</span>
+        </div>
+        <div class="sl muted">
+          <a href="https://www.payscale.com/research/PH/Job=Film_%2F_Video_Editor/Hourly_Rate" target="_blank" rel="noopener">PayScale &mdash; film/video editor, Philippines</a>
+          <span>&#8369;128/hr average, 126 profiles, June 2026 &mdash; roughly US$2. This measures <b>local salaried employment</b>, not freelance work for an international brand. Noted so nobody is caught out by it.</span>
+        </div>
+      </div>
 
       <div class="tbl">
         <div class="tr head"><div class="l">Additional costs &mdash; to confirm with the team</div><div class="v">Monthly</div></div>
