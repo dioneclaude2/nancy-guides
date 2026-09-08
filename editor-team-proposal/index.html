@@ -177,6 +177,14 @@ h2{font-size:clamp(24px,3.7vw,42px)}
          text-transform:uppercase;color:var(--accent);margin-bottom:7px}
 .opt h4{font-size:clamp(14.5px,1.6vw,17px);margin-bottom:5px}
 .opt p{margin:0;font-size:clamp(12.5px,1.35vw,14px);line-height:1.5;color:var(--soft)}
+
+/* sourcing channels */
+.src{display:grid;gap:12px}
+@media (min-width:760px){.src{grid-template-columns:repeat(3,1fr)}}
+.sc{border:1px solid var(--line);background:#fff;padding:14px 16px;border-top:3px solid var(--accent)}
+.sc .sn{font-family:var(--serif);font-size:clamp(17px,2vw,21px);font-weight:400;margin-bottom:6px}
+.sc p{margin:0;font-size:clamp(12px,1.3vw,13.5px);line-height:1.5;color:var(--soft)}
+.sc p b{color:var(--ink);font-weight:600}
 </style>
 
 <div class="prog"><i id="pg"></i></div>
@@ -297,7 +305,25 @@ h2{font-size:clamp(24px,3.7vw,42px)}
           </ul>
         </div>
       </div>
-      <p class="note">No commitment to anyone before we have seen their output. <b>A trial day is cheap. Finding out mid-event is not.</b></p>
+      <h4 class="oh">Where they would come from</h4>
+      <div class="src">
+        <div class="sc">
+          <div class="sn">Upwork</div>
+          <p>The deepest pool, and the one with a public track record on every profile. <b>5% client fee</b> on top of the rate.</p>
+        </div>
+        <div class="sc">
+          <div class="sn">OnlineJobs.ph</div>
+          <p><b>No per-hire fee</b>, which suits an ongoing arrangement better than a one-off booking.</p>
+        </div>
+        <div class="sc">
+          <div class="sn">Referrals</div>
+          <p>From the people we already work with. Costs nothing, and arrives part-vetted by someone whose judgement we know.</p>
+        </div>
+      </div>
+      <p class="note">
+        <b>No commitment to anyone before we have seen their output.</b> A trial day is cheap.
+        Finding out mid-event is not.
+      </p>
     </div>
   </section>
 
@@ -306,7 +332,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
       <div class="eyebrow">Hiring</div>
       <h2>Six steps, deliberately light</h2>
       <div class="steps">
-        <div class="st"><span class="sn">1</span><span><h4>Source talent.</h4> Referrals, portfolios, freelance platforms.</span></div>
+        <div class="st"><span class="sn">1</span><span><h4>Source candidates.</h4> Upwork, OnlineJobs.ph and referrals &mdash; see the previous slide.</span></div>
         <div class="st"><span class="sn">2</span><span><h4>Sign the confidentiality agreement.</h4> Before any paid work begins. Draft in the appendix.</span></div>
         <div class="st"><span class="sn">3</span><span><h4>First interview &mdash; Dion&eacute; and Ally.</h4> Experience, availability, working style. Screening only.</span></div>
         <div class="st"><span class="sn">4</span><span><h4>Paid one-day trial.</h4> A set of clips, minimal direction. How much they finish, and how they read the assets. <b>This is the real signal.</b></span></div>
@@ -426,11 +452,13 @@ h2{font-size:clamp(24px,3.7vw,42px)}
         <div class="tr us"><div class="l">Senior<small>Improves the content, not just executes it</small></div><div class="v num">$10&ndash;15+ &middot; $80&ndash;195</div></div>
       </div>
       <p class="note">
-        <b>Why $7 is the floor.</b> The market puts mid-level at $6&ndash;7 and senior at $10&ndash;15+
-        <a href="https://hiretalent.ph/blog/how-much-should-i-pay-a-filipino-video-editor" target="_blank" rel="noopener">(HireTalent.ph, updated December 2025)</a>.
-        Starting at $7 puts us at the <b>top of the mid band rather than the bottom</b> &mdash; which is
-        what it takes to get someone worth training.
+        <b>Where this sits.</b> Video editors on
+        <a href="https://www.upwork.com/hire/video-editors/cost/" target="_blank" rel="noopener">Upwork</a>
+        run <b>$6&ndash;25 an hour</b>. Our two tiers sit in the lower half of that &mdash; we are not
+        paying premium rates. What we are declining is the very bottom of the range, where you get
+        someone learning on our footage.
       </p>
+
       <div class="tbl">
         <div class="tr head"><div class="l">Additional costs &mdash; to confirm with the team</div><div class="v">Monthly</div></div>
         <div class="tr"><div class="l"><span class="blank"></span></div><div class="v"><span class="blank"></span></div></div>
