@@ -45,6 +45,16 @@
 .dc p b{color:var(--ink)}
 .two.dl{margin-top:16px}
 .two.dl .blank{min-width:90px}
+
+.strip.slim img{aspect-ratio:4/3}
+.slide .asks{margin-top:20px}
+.ask{padding:14px 16px 15px}
+.ask .av{font-size:clamp(28px,3.4vw,40px);margin:5px 0 7px}
+.ask p{font-size:clamp(11.5px,1.2vw,13px);line-height:1.45}
+.dec{gap:7px;margin-top:14px}
+.dc{padding:10px 15px;gap:12px}
+.dc h4{font-size:clamp(12.5px,1.35vw,14.5px)}
+.dc p{font-size:clamp(11.5px,1.2vw,13px);line-height:1.45}
 </style>
 
 <style>
@@ -242,51 +252,28 @@ h2{font-size:clamp(24px,3.7vw,42px)}
   <section class="slide">
     <div class="inner">
       <div class="act"><i>1</i> The ask</div>
-      <div class="eyebrow">Proposal</div>
       <h1>A small editing team,<br>instead of rehiring one every event.</h1>
       <p class="lede">
-        A small editing team working alongside me. I would handle the sourcing, the training and
-        the standards, and keep supporting Crystal as I do now.
-      </p>
-      <div class="strip" id="strip"></div>
-      <div class="mark"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDYwMCAyMTkuNCI+PGRlZnM+PHN0eWxlPi5ke2ZpbGw6I0ZERjdGNTt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImEiLz48ZyBpZD0iYiI+PGcgaWQ9ImMiPjxnPjxwYXRoIGNsYXNzPSJkIiBkPSJNMzg3LjA0LDExOC44MWMtNy4yNS02LjQ0LTkuNjktMTEuODEtOS42OS0yMi4yNSwwLTkuNjcsMy4wNi0xOS4xOCwzLjA2LTI5LjA1LDAtMTkuMDEtNi0zMi45NC0zNi42NS0zMi45NC0xNC41MSwwLTI0LjM5LDcuNzYtMzEuNjQsMTYuMjEsLjItMS4yMSwuNi0yLjYyLDEuMDEtNC4wMywuNC0xLjYxLC42LTMuMjIsLjYtNC40MywwLTQuNDMtMi4wNy03LjQ1LTUuOTMtNy42Ny0xLjQxLS4wOC00LjM4LS4xNi02Ljg4LC41My01Ljc1LDEuNjktNi4zMSw1LjI1LTE3LjE1LDYuNS05Ljc3LDEuMTItMTEuOTUtMS43OC0yMC4zNC0xLjc4LTMuMjIsMC02LjE4LDIuNjctNi4xOCw1LjY5czEuMzgsNS45OSw0Ljg3LDcuMjVjOC42MiwzLjA5LDEyLjE2LDE0LjAzLDEyLjM3LDI2LjcxLC4xOSwxMC45Ny0zLjA4LDIyLjIzLTcuMjIsMzAuMTUtNC40MSw4LjQ0LTExLjM5LDYuOTEtMTIuMTQsNi43My0xMi40OS0zLjIyLTkuMjgtMTguMTQtOS45OC0zMy4wNC0xLjAzLTIxLjg0LTUuNTktNDkuNjMtNTguMzctNDkuNjMtMzAuNjIsMC00Mi4xLDExLjI4LTQyLjEsMjEuMTUsMCw3Ljg1LDcuMjUsMTQuOTEsMTcuNTIsMTQuOTEsMjMuNzcsMCw4Ljg3LTI3Ljk1LDI1Ljk5LTI3Ljk1LDYuMjQsMCwxMy4yOSw2LjE5LDE3LjkzLDIyLjMtMS42MSwxNi4xMi02Ni40NywxNi45Mi02Ni40Nyw1MC43NywwLDE1LjMxLDEyLjg5LDIzLjM2LDI4LjIsMjMuMzZzMzUuNTctOC44Nyw0NC4wMy0yOC4wMWMwLDIuNDItLjM2LDYuODEtLjQzLDkuMjMtLjMyLDEyLjE5LDQuMTEsMTguMjksMTEuNTgsMTkuNjQsNi4zMiwxLjE0LDIwLjEyLS44LDIzLjUtMi4yNywxLjk2LS44Niw1Ljk5LTQuMjIsOC00LjI5LDIuODEtLjA5LDMuNzUsMy42Niw3LjU5LDMuODksMTIuNTgsLjc2LDUyLjAzLC43LDUyLjAzLC43LDQuMDMsMCw2Ljg0LTIuODIsNi44NC03LjA1LDAtMy44My0yLjAxLTcuODUtNS42NC0xMS4yOC03Ljg2LTcuNDUtMTAuODgtMTkuMTQtOC44Ni0zNy40NywyLjYyLTE3LjUyLDEyLjA2LTI5LjcxLDIyLjEzLTI5LjcxLDEyLjQ5LDAsMTYuOTUsMTMuMzksMTYuOTUsMjguMXMtNS4yNCwzMS4wMi0xNC4xMSwzOS40OWMtMy42MiwzLjIyLTUuNjQsNy4wNS01LjY0LDEwLjY4LDAsNC40MywyLjgyLDcuMjUsNy4wNSw3LjI1aDUyLjM3YzQuMjMsMCw3LjY2LTIuOTIsNy42Ni03LjE2LC4wMS00LjYxLTIuMjQtOC4yMS01Ljg2LTExLjIzbS0xOTkuNjUtOS4wOWMtNS44NCwwLTguODYtMy44My04Ljg2LTguNjcsMC0xMi44OSwyMS4zNS0xNS41MSwzMC4yMi0yNC4xNywuNCwyLjgzLC44LDUuNjQsMSw4Ljg3LDAsMTUuMS04LjI2LDIzLjk3LTIyLjM2LDIzLjk3Ii8+PHBhdGggY2xhc3M9ImQiIGQ9Ik00NDUuNywxMzguNTJjLTI5LjYxLDAtNTUuNi0xOC43My01NS42LTUyLjE3czI1Ljk5LTUyLjE3LDU1LjYtNTIuMTdjMjYuNTksMCw0MC4wOSwxMy45LDQwLjA5LDI1Ljk4cy05LjQ3LDE4Ljc0LTE4LjUzLDE4Ljc0Yy03Ljg2LDAtMTUuMTEtNS4wNC0xNS43MS0xNS43MS0uNjEtOS44Ny0zLjAyLTE5LjM0LTE0LjUtMTkuMzQtOS42NywwLTE0LjUsMTAuNjgtMTQuNSwyMy4zNywwLDIwLjU1LDEyLjA2LDQ3Ljc4LDM2LjQzLDQ3Ljc4LDcuODEsMCwyMC4xNy00LjQ3LDI2LjAxLTE0Ljk1LC40LS42LDEuMjEtMS4wMSwyLjAxLTEuMDEsMi42MiwwLDYuNjUsMi42Miw0LjgzLDYuNjUtOC44NiwyMC4xNC0yMy4zNiwzMi44My00Ni4xMywzMi44MyIvPjxwYXRoIGNsYXNzPSJkIiBkPSJNNTUyLjQ2LDQxLjgzYzAtMi42MiwxLjYxLTUuMjQsNC44My02LjA0LDYuMjUtMS40MSwxNS45MS0zLjIyLDI0LjU4LTMuMjIsOS42NywwLDE4LjEzLDIuMjIsMTguMTMsOS40NywwLDIuNDItLjA5LDQuNi0yLjMsOC4yMmwtMTEuMTIsMTkuODctNTQuODYsOTUuNTljLTYuMjQsMTEuMDgtOS44MiwxNS4xMS0xOS41NCwxNS4xMS0xMy4zLDAtMjQuNzgtMTcuMTItMjQuNzgtMjkuMDEsMC02LjQ1LDMuNDMtMTEuNDgsMTEuNDgtMTEuNDgsMi4yMiwwLDQuNzUtLjIzLDcuNzcsLjc4LDUuNDQsMS42MSw1LjYyLDMuOTQsMTMuMTksNC4wNiw0LjA2LC4wNyw1LjA4LS40MSw2Ljc1LTEuNjksMi4zNy0xLjgxLDMuMzctNC40OSwzLjM3LTguMzEsMC0yMS4zNS0yNy42Ni04MC4yNi0zNS41MS04My4wOC0zLjYzLTEuNDEtNS44NC0zLjQyLTYuMjUtNi40NC0uNi0zLjAyLDEuMDEtNS4wNCw0LjIzLTUuMDQsMTYuNTIsMCwyNi43LTEuMjUsMzcuNzgtNC42OCwxLjYxLS40LDMuNjktMS43Nyw1Ljc0LTEuNTcsNS4zOCwuNTIsOS40Miw0LjU2LDkuMDEsMTEuODItLjIsMS4yMS0uNTQsMi4zMy0uOTYsNC4xLTEuNjcsNy4wOS0yLjE2LDE1LjA0LTEuMDQsMjMuNTksMS41NCwxMS44MSw2Ljk2LDIyLjc0LDExLjUyLDIyLjc0LC44MSwwLDIuODUsLjE5LDMuOTEtMS40NCw0LjI0LTEwLjAzLDguNjktMjEuNjYsOC42OS0zMS4xMiwwLTcuODctNC4yNS0xMy4yNS05Ljk4LTE1LjU5LTMuMDMtMS4yLTQuNjQtMy44Mi00LjY0LTYuNjQiLz48cGF0aCBjbGFzcz0iZCIgZD0iTTI4LDM1Ljg2Yy0xLjAxLDMwLjQyLDguODYsNzIuMTIsMjAuNTUsODYuNDIsMy40Myw0LjIzLDUuMjQsOC4yNiw1LjI0LDExLjY5LDAsNC4yMy0yLjgyLDcuMDUtNy4wNSw3LjA1SDYuODVjLTQuMjMsMC02Ljg1LTIuODItNi44NS03LjA1LDAtMy4yMiwxLjYxLTYuODUsNS4yNC0xMS40OCw3LjY1LTkuODcsMTEuODktMzEuMjIsMTEuODktNTIuNThTMTMuMywyOS4wMSw1LjA0LDE4Ljc0QzEuNjIsMTQuNTEsMCwxMC40OCwwLDcuMDUsMCwyLjgyLDIuNjIsMCw2Ljg1LDBIMzkuNjhjNC4wMywwLDYuNDUsMy4yMiw5LjI3LDYuODUsMTYuNjksMjMuMzcsMzYuMzcsNTMuNDYsNjAuMjUsODYuNDQsMC0zOC45OC01LjI1LTU5LjUzLTE3Ljk0LTc0LjU1LTMuNDMtNC4yMy01LjI0LTguMjYtNS4yNC0xMS42OSwwLTQuMjMsMi44Mi03LjA1LDcuMDUtNy4wNWgzOS44OWM0LjIzLDAsNy4wNSwyLjgyLDcuMDUsNy4wNSwwLDMuMjItMS44MSw2Ljg1LTUuNDQsMTEuNDgtOC44NiwxMS4yOC0xNC41LDM4LjQ4LTE0LjUsNjMuNDYsMCwxNS4xMSwyLjAxLDI5LjYxLDcuMDUsMzguNjgsLjg2LDEuMzQsNS4yNywxMS40NywxMi41MywyMS44OCw3Ljk5LDExLjQ1LDE5LjA4LDIzLjQ1LDI0LjYxLDI5LjQzLDE1Ljg0LDE3LjE2LDMyLjU1LDI2LjY0LDQ0LjA0LDI2LjY0LDUuMjQsMCwxMS4yNy0uMjksMTEuMjctNC41MiwwLTcuMTItMTkuMTYtNC44Ny0xOS4xNi0yMi41LDAtNy44NywxMS40Ny0xNC40NCwxOC40MS0xNC40NCwxNC43MSwwLDIxLjMxLDguODIsMjEuMzEsMjEuMTEsMCwxOC4zMy0xNS45NCw0Mi4yNi00Ni45NCw0MS4wOS02Ni44NC0yLjUtMTAyLjM0LTExNy42Mi0xNjUuMTktMTgzLjUiLz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Nancy"></div>
-    </div>
-  </section>
-
-  <section class="slide">
-    <div class="inner">
-      <div class="act"><i>1</i> The ask</div>
-      <div class="eyebrow">The ask</div>
-      <h2>Three editors, in place before<br>the next event &mdash; not during it.</h2>
-      <p class="lede">
-        Two adaptive editors and one adaptive lead, sourced and trialled by me, working as event
-        partners rather than one-off hires. <b>This is my recommendation, not a fixed number</b>
-        &mdash; three is what covers an event without anyone doubling as the uploader.
+        Two adaptive editors and one adaptive creative, working alongside me. I would handle the
+        sourcing, the training and the standards, and keep supporting Crystal as I do now.
+        <b>Three is my recommendation, not a fixed number.</b>
       </p>
       <div class="asks">
         <div class="ask">
-          <div class="al">How many</div>
-          <div class="av num">3</div>
-          <p><b>2 adaptive editors</b> to carry the volume, <b>1 adaptive lead</b> to lift the
-             quality and take the calls I would otherwise take myself.</p>
+          <div class="al">How many</div><div class="av num">3</div>
+          <p>Two to carry the volume, one to lift the quality. Enough that nobody doubles as the uploader.</p>
         </div>
         <div class="ask">
-          <div class="al">By when</div>
-          <div class="av num">3 wks</div>
-          <p>From a yes to a trained team: sourcing and confidentiality in week one, paid trials in
-             week two, decisions in week three. Next event: <span class="blank"></span></p>
+          <div class="al">By when</div><div class="av num">3 wks</div>
+          <p>Sourcing week one, paid trials week two, decisions week three. Next event: <span class="blank"></span></p>
         </div>
         <div class="ask">
-          <div class="al">What it changes</div>
-          <div class="av num">0</div>
-          <p>Events that start from zero. Briefing happens <b>before</b> the day, corrections are
-             made once, and the second event is faster than the first.</p>
+          <div class="al">What it changes</div><div class="av num">0</div>
+          <p>Events that start from zero. Briefing happens <b>before</b> the day, and corrections are made once.</p>
         </div>
       </div>
-      <p class="note">
-        <b>Nothing here commits us to three people.</b> It commits us to trialling properly and
-        deciding on output &mdash; the full sequence is in part 3.
-      </p>
+      <div class="strip slim" id="strip"></div>
+      <div class="mark"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDYwMCAyMTkuNCI+PGRlZnM+PHN0eWxlPi5ke2ZpbGw6I0ZERjdGNTt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImEiLz48ZyBpZD0iYiI+PGcgaWQ9ImMiPjxnPjxwYXRoIGNsYXNzPSJkIiBkPSJNMzg3LjA0LDExOC44MWMtNy4yNS02LjQ0LTkuNjktMTEuODEtOS42OS0yMi4yNSwwLTkuNjcsMy4wNi0xOS4xOCwzLjA2LTI5LjA1LDAtMTkuMDEtNi0zMi45NC0zNi42NS0zMi45NC0xNC41MSwwLTI0LjM5LDcuNzYtMzEuNjQsMTYuMjEsLjItMS4yMSwuNi0yLjYyLDEuMDEtNC4wMywuNC0xLjYxLC42LTMuMjIsLjYtNC40MywwLTQuNDMtMi4wNy03LjQ1LTUuOTMtNy42Ny0xLjQxLS4wOC00LjM4LS4xNi02Ljg4LC41My01Ljc1LDEuNjktNi4zMSw1LjI1LTE3LjE1LDYuNS05Ljc3LDEuMTItMTEuOTUtMS43OC0yMC4zNC0xLjc4LTMuMjIsMC02LjE4LDIuNjctNi4xOCw1LjY5czEuMzgsNS45OSw0Ljg3LDcuMjVjOC42MiwzLjA5LDEyLjE2LDE0LjAzLDEyLjM3LDI2LjcxLC4xOSwxMC45Ny0zLjA4LDIyLjIzLTcuMjIsMzAuMTUtNC40MSw4LjQ0LTExLjM5LDYuOTEtMTIuMTQsNi43My0xMi40OS0zLjIyLTkuMjgtMTguMTQtOS45OC0zMy4wNC0xLjAzLTIxLjg0LTUuNTktNDkuNjMtNTguMzctNDkuNjMtMzAuNjIsMC00Mi4xLDExLjI4LTQyLjEsMjEuMTUsMCw3Ljg1LDcuMjUsMTQuOTEsMTcuNTIsMTQuOTEsMjMuNzcsMCw4Ljg3LTI3Ljk1LDI1Ljk5LTI3Ljk1LDYuMjQsMCwxMy4yOSw2LjE5LDE3LjkzLDIyLjMtMS42MSwxNi4xMi02Ni40NywxNi45Mi02Ni40Nyw1MC43NywwLDE1LjMxLDEyLjg5LDIzLjM2LDI4LjIsMjMuMzZzMzUuNTctOC44Nyw0NC4wMy0yOC4wMWMwLDIuNDItLjM2LDYuODEtLjQzLDkuMjMtLjMyLDEyLjE5LDQuMTEsMTguMjksMTEuNTgsMTkuNjQsNi4zMiwxLjE0LDIwLjEyLS44LDIzLjUtMi4yNywxLjk2LS44Niw1Ljk5LTQuMjIsOC00LjI5LDIuODEtLjA5LDMuNzUsMy42Niw3LjU5LDMuODksMTIuNTgsLjc2LDUyLjAzLC43LDUyLjAzLC43LDQuMDMsMCw2Ljg0LTIuODIsNi44NC03LjA1LDAtMy44My0yLjAxLTcuODUtNS42NC0xMS4yOC03Ljg2LTcuNDUtMTAuODgtMTkuMTQtOC44Ni0zNy40NywyLjYyLTE3LjUyLDEyLjA2LTI5LjcxLDIyLjEzLTI5LjcxLDEyLjQ5LDAsMTYuOTUsMTMuMzksMTYuOTUsMjguMXMtNS4yNCwzMS4wMi0xNC4xMSwzOS40OWMtMy42MiwzLjIyLTUuNjQsNy4wNS01LjY0LDEwLjY4LDAsNC40MywyLjgyLDcuMjUsNy4wNSw3LjI1aDUyLjM3YzQuMjMsMCw3LjY2LTIuOTIsNy42Ni03LjE2LC4wMS00LjYxLTIuMjQtOC4yMS01Ljg2LTExLjIzbS0xOTkuNjUtOS4wOWMtNS44NCwwLTguODYtMy44My04Ljg2LTguNjcsMC0xMi44OSwyMS4zNS0xNS41MSwzMC4yMi0yNC4xNywuNCwyLjgzLC44LDUuNjQsMSw4Ljg3LDAsMTUuMS04LjI2LDIzLjk3LTIyLjM2LDIzLjk3Ii8+PHBhdGggY2xhc3M9ImQiIGQ9Ik00NDUuNywxMzguNTJjLTI5LjYxLDAtNTUuNi0xOC43My01NS42LTUyLjE3czI1Ljk5LTUyLjE3LDU1LjYtNTIuMTdjMjYuNTksMCw0MC4wOSwxMy45LDQwLjA5LDI1Ljk4cy05LjQ3LDE4Ljc0LTE4LjUzLDE4Ljc0Yy03Ljg2LDAtMTUuMTEtNS4wNC0xNS43MS0xNS43MS0uNjEtOS44Ny0zLjAyLTE5LjM0LTE0LjUtMTkuMzQtOS42NywwLTE0LjUsMTAuNjgtMTQuNSwyMy4zNywwLDIwLjU1LDEyLjA2LDQ3Ljc4LDM2LjQzLDQ3Ljc4LDcuODEsMCwyMC4xNy00LjQ3LDI2LjAxLTE0Ljk1LC40LS42LDEuMjEtMS4wMSwyLjAxLTEuMDEsMi42MiwwLDYuNjUsMi42Miw0LjgzLDYuNjUtOC44NiwyMC4xNC0yMy4zNiwzMi44My00Ni4xMywzMi44MyIvPjxwYXRoIGNsYXNzPSJkIiBkPSJNNTUyLjQ2LDQxLjgzYzAtMi42MiwxLjYxLTUuMjQsNC44My02LjA0LDYuMjUtMS40MSwxNS45MS0zLjIyLDI0LjU4LTMuMjIsOS42NywwLDE4LjEzLDIuMjIsMTguMTMsOS40NywwLDIuNDItLjA5LDQuNi0yLjMsOC4yMmwtMTEuMTIsMTkuODctNTQuODYsOTUuNTljLTYuMjQsMTEuMDgtOS44MiwxNS4xMS0xOS41NCwxNS4xMS0xMy4zLDAtMjQuNzgtMTcuMTItMjQuNzgtMjkuMDEsMC02LjQ1LDMuNDMtMTEuNDgsMTEuNDgtMTEuNDgsMi4yMiwwLDQuNzUtLjIzLDcuNzcsLjc4LDUuNDQsMS42MSw1LjYyLDMuOTQsMTMuMTksNC4wNiw0LjA2LC4wNyw1LjA4LS40MSw2Ljc1LTEuNjksMi4zNy0xLjgxLDMuMzctNC40OSwzLjM3LTguMzEsMC0yMS4zNS0yNy42Ni04MC4yNi0zNS41MS04My4wOC0zLjYzLTEuNDEtNS44NC0zLjQyLTYuMjUtNi40NC0uNi0zLjAyLDEuMDEtNS4wNCw0LjIzLTUuMDQsMTYuNTIsMCwyNi43LTEuMjUsMzcuNzgtNC42OCwxLjYxLS40LDMuNjktMS43Nyw1Ljc0LTEuNTcsNS4zOCwuNTIsOS40Miw0LjU2LDkuMDEsMTEuODItLjIsMS4yMS0uNTQsMi4zMy0uOTYsNC4xLTEuNjcsNy4wOS0yLjE2LDE1LjA0LTEuMDQsMjMuNTksMS41NCwxMS44MSw2Ljk2LDIyLjc0LDExLjUyLDIyLjc0LC44MSwwLDIuODUsLjE5LDMuOTEtMS40NCw0LjI0LTEwLjAzLDguNjktMjEuNjYsOC42OS0zMS4xMiwwLTcuODctNC4yNS0xMy4yNS05Ljk4LTE1LjU5LTMuMDMtMS4yLTQuNjQtMy44Mi00LjY0LTYuNjQiLz48cGF0aCBjbGFzcz0iZCIgZD0iTTI4LDM1Ljg2Yy0xLjAxLDMwLjQyLDguODYsNzIuMTIsMjAuNTUsODYuNDIsMy40Myw0LjIzLDUuMjQsOC4yNiw1LjI0LDExLjY5LDAsNC4yMy0yLjgyLDcuMDUtNy4wNSw3LjA1SDYuODVjLTQuMjMsMC02Ljg1LTIuODItNi44NS03LjA1LDAtMy4yMiwxLjYxLTYuODUsNS4yNC0xMS40OCw3LjY1LTkuODcsMTEuODktMzEuMjIsMTEuODktNTIuNThTMTMuMywyOS4wMSw1LjA0LDE4Ljc0QzEuNjIsMTQuNTEsMCwxMC40OCwwLDcuMDUsMCwyLjgyLDIuNjIsMCw2Ljg1LDBIMzkuNjhjNC4wMywwLDYuNDUsMy4yMiw5LjI3LDYuODUsMTYuNjksMjMuMzcsMzYuMzcsNTMuNDYsNjAuMjUsODYuNDQsMC0zOC45OC01LjI1LTU5LjUzLTE3Ljk0LTc0LjU1LTMuNDMtNC4yMy01LjI0LTguMjYtNS4yNC0xMS42OSwwLTQuMjMsMi44Mi03LjA1LDcuMDUtNy4wNWgzOS44OWM0LjIzLDAsNy4wNSwyLjgyLDcuMDUsNy4wNSwwLDMuMjItMS44MSw2Ljg1LTUuNDQsMTEuNDgtOC44NiwxMS4yOC0xNC41LDM4LjQ4LTE0LjUsNjMuNDYsMCwxNS4xMSwyLjAxLDI5LjYxLDcuMDUsMzguNjgsLjg2LDEuMzQsNS4yNywxMS40NywxMi41MywyMS44OCw3Ljk5LDExLjQ1LDE5LjA4LDIzLjQ1LDI0LjYxLDI5LjQzLDE1Ljg0LDE3LjE2LDMyLjU1LDI2LjY0LDQ0LjA0LDI2LjY0LDUuMjQsMCwxMS4yNy0uMjksMTEuMjctNC41MiwwLTcuMTItMTkuMTYtNC44Ny0xOS4xNi0yMi41LDAtNy44NywxMS40Ny0xNC40NCwxOC40MS0xNC40NCwxNC43MSwwLDIxLjMxLDguODIsMjEuMzEsMjEuMTEsMCwxOC4zMy0xNS45NCw0Mi4yNi00Ni45NCw0MS4wOS02Ni44NC0yLjUtMTAyLjM0LTExNy42Mi0xNjUuMTktMTgzLjUiLz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Nancy"></div>
     </div>
   </section>
 
@@ -420,12 +407,12 @@ h2{font-size:clamp(24px,3.7vw,42px)}
       <div class="tbl">
         <div class="tr head"><div class="l">What we are hiring for</div><div class="v">Hourly &middot; per event day (8&ndash;13 hrs)</div></div>
         <div class="tr us"><div class="l">Adaptive<small>Cuts on their own, and keeps up when the brief moves mid-event</small></div><div class="v num">$7&ndash;10 &middot; $56&ndash;130</div></div>
-        <div class="tr us"><div class="l">Adaptive lead<small>All of that, and improves the content &mdash; brings references, calls the hook</small></div><div class="v num">$10&ndash;15+ &middot; $80&ndash;195</div></div>
+        <div class="tr us"><div class="l">Adaptive creative<small>All of that, and improves the content &mdash; brings references, calls the hook</small></div><div class="v num">$10&ndash;15+ &middot; $80&ndash;195</div></div>
       </div>
       <p class="note">
         <b>Where $7 comes from.</b> On Upwork, where these people are found, video editors run
         <b>$6&ndash;25 an hour</b>. The bottom of that band is where people are still learning, so we
-        start at the top of it rather than the floor. The lead rate sits at $10&ndash;15+, still
+        start at the top of it rather than the floor. The creative rate sits at $10&ndash;15+, still
         inside the same range and a fraction of what Western freelance and agency editors charge.
       </p>
       <div class="srcs one">
@@ -565,9 +552,9 @@ h2{font-size:clamp(24px,3.7vw,42px)}
 
   <section class="slide">
     <div class="inner">
-      <div class="act"><i>3</i> The how</div>
-      <div class="eyebrow">Terms</div>
-      <h2>What is fixed, and what we can shape</h2>
+      <div class="act"><i>4</i> Decision</div>
+      <div class="eyebrow">Decision</div>
+      <h2>What is fixed, what is open,<br>and what I need today</h2>
       <div class="terms">
         <div class="tcard fixed">
           <div class="th">Nonnegotiable</div>
@@ -592,70 +579,20 @@ h2{font-size:clamp(24px,3.7vw,42px)}
           </ul>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="slide">
-    <div class="inner">
-      <div class="act"><i>4</i> Decision</div>
-      <div class="eyebrow">Decision</div>
-      <h2>What I need from you today</h2>
-      <p class="lede">
-        Not a decision on three editors. A decision on <b>the trial days</b> &mdash; which is the
-        only way any of the rest of this can be decided on evidence.
-      </p>
       <div class="dec">
-        <div class="dc yes">
-          <div class="dn">1</div>
-          <div>
-            <h4>Approve the paid trial days.</h4>
-            <p>Up to five candidates, one paid day each, at the $7&ndash;10 rate.
-               <b>$280&ndash;650 in total.</b> That is the entire spend being approved today.</p>
-          </div>
-        </div>
-        <div class="dc yes">
-          <div class="dn">2</div>
-          <div>
-            <h4>Confirm the headcount we are sourcing towards.</h4>
-            <p>Three, or a different number. I need it before I start sourcing so I am not
-               interviewing people for a role that does not exist.</p>
-          </div>
-        </div>
-        <div class="dc yes">
-          <div class="dn">3</div>
-          <div>
-            <h4>Send the confidentiality draft to whoever handles contracts.</h4>
-            <p>Appendix at the end. Nobody starts paid work before it is signed, so this is the one
-               item that can block the timeline.</p>
-          </div>
-        </div>
-        <div class="dc later">
-          <div class="dn">&mdash;</div>
-          <div>
-            <h4>Decided later, together, on output.</h4>
-            <p>Who we actually hire, final rates inside the two bands, and how the lead-in days are
-               priced. I bring you the trial results and a short written assessment first.</p>
-          </div>
-        </div>
+        <div class="dc yes"><div class="dn">1</div><div><h4>Approve the paid trial days.</h4>
+          <p>Up to five candidates, one paid day each at the $7&ndash;10 rate &mdash; <b>$280&ndash;650 in total.</b>
+             That is the entire spend being approved today.</p></div></div>
+        <div class="dc yes"><div class="dn">2</div><div><h4>Confirm the headcount I am sourcing towards.</h4>
+          <p>Three, or a different number &mdash; I need it before I start, so I am not interviewing for a role that does not exist.</p></div></div>
+        <div class="dc yes"><div class="dn">3</div><div><h4>Send the confidentiality draft to whoever handles contracts.</h4>
+          <p>Appendix overleaf. Nobody starts paid work before it is signed, so this is the one item that can block the timeline.</p></div></div>
       </div>
-      <div class="two dl">
-        <div class="pane go">
-          <h4>Deadline</h4>
-          <ul>
-            <li>A yes on the trial days by <span class="blank"></span></li>
-            <li>Confidentiality draft back by <span class="blank"></span></li>
-            <li>Team in place by <span class="blank"></span></li>
-          </ul>
-        </div>
-        <div class="pane">
-          <h4>If the answer is no, or not yet</h4>
-          <ul>
-            <li>We rehire per event, and <b>every event starts from zero again</b></li>
-            <li>Briefing keeps landing on the day, as it did at the US Open</li>
-            <li>Hooks and captions keep coming back to me after the cut is locked</li>
-          </ul>
-        </div>
-      </div>
+      <p class="note">
+        <b>Decided later, together, on output:</b> who we actually hire, final rates inside the two
+        bands, and how the lead-in days are priced. I bring you the trial results and a short written
+        assessment first. <b>A yes on the trial days by</b> <span class="blank"></span>
+      </p>
     </div>
   </section>
 
@@ -693,7 +630,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
   <span class="who">Editor team proposal</span>
   <span class="sp"></span>
   <button type="button" id="prev">&larr; Back</button>
-  <span class="n" id="n">1 / 13</span>
+  <span class="n" id="n">1 / 11</span>
   <button type="button" id="next">Next &rarr;</button>
 </div>
 
