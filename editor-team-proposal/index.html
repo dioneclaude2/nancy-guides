@@ -46,6 +46,23 @@
 .two.dl{margin-top:16px}
 .two.dl .blank{min-width:90px}
 
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:9px 0 9px}
+.chips b{font-family:var(--alt);font-weight:600;font-size:clamp(12px,1.3vw,14px);
+         color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);
+         padding:3px 10px;white-space:nowrap}
+.pillars{display:grid;gap:10px;margin-top:20px}
+@media (min-width:900px){.pillars{grid-template-columns:repeat(4,1fr)}}
+.pil{border:1px solid var(--line);background:#fff;padding:13px 15px 12px}
+.pil.take{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.pil .pn{font-family:var(--serif);font-weight:700;font-size:17px;color:var(--soft)}
+.pil.take .pn{color:var(--accent)}
+.pil h4{font-size:clamp(13px,1.4vw,15px);margin:5px 0 3px}
+.pil em{display:block;font-family:var(--alt);font-style:italic;
+        font-size:clamp(11.5px,1.2vw,13px);color:var(--soft)}
+.pil .who{margin-top:9px;padding-top:8px;border-top:1px solid var(--line);
+          font-size:10.5px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.pil.take .who{color:var(--accent);border-top-color:var(--accent)}
+
 .paths{display:grid;gap:12px;margin-top:16px}
 @media (min-width:820px){.paths{grid-template-columns:1fr 1fr}}
 .pth{border:1px solid var(--line);background:#fff;padding:13px 16px 14px}
@@ -284,16 +301,19 @@ h2{font-size:clamp(24px,3.7vw,42px)}
       <div class="asks">
         <div class="ask">
           <div class="al">How many</div><div class="av num">2</div>
-          <p>One to carry the volume, one to lift the quality. Enough that nobody doubles as the uploader.</p>
+          <p><b>A test, to add manpower and volume.</b> One to carry the volume, one to lift the
+             quality. Enough that nobody doubles as the uploader.</p>
         </div>
         <div class="ask">
           <div class="al">By when</div><div class="av num">3 wks</div>
-          <p>To a decision: posting, then interviews and trial, then decide. Week four is orientation and training. Next event: <span class="blank"></span></p>
+          <p>To a decision: posting, then interviews and trial, then decide. Week four is
+             orientation and training.</p>
         </div>
         <div class="ask">
-          <div class="al">What it changes</div><div class="av">Efficiency</div>
-          <p><b>One brief, not two.</b> Trained once, by Crystal and me, instead of re-explained
-             through a team in between every time something moves.</p>
+          <div class="al">What it changes</div>
+          <div class="chips"><b>Efficiency</b><b>Capacity</b><b>Growth</b></div>
+          <p>One brief instead of two. More volume than I can produce alone. And room for Crystal
+             and me to build systems rather than output.</p>
         </div>
       </div>
       <div class="strip slim" id="strip"></div>
@@ -358,6 +378,39 @@ h2{font-size:clamp(24px,3.7vw,42px)}
             <li>Second event is faster than the first</li>
             <li>Corrections are made once, not every event</li>
             <li>Quality becomes predictable</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="act"><i>2</i> The why</div>
+      <div class="eyebrow">Capacity and growth</div>
+      <h2>Four pillars hold up marketing.<br>Right now they sit on one person.</h2>
+      <p class="lede">
+        Possible? Yes &mdash; it is what we have been doing. <b>Sustainable, and growth-forward? No.</b>
+      </p>
+      <div class="pillars">
+        <div class="pil"><span class="pn">1</span><h4>Strategy &amp; research</h4><em>The strategist</em><div class="who">Me</div></div>
+        <div class="pil take"><span class="pn">2</span><h4>Creation &amp; production</h4><em>The editor, designer, writer</em><div class="who">Me &rarr; the team</div></div>
+        <div class="pil"><span class="pn">3</span><h4>Management &amp; distribution</h4><em>The social media manager</em><div class="who">Me</div></div>
+        <div class="pil"><span class="pn">4</span><h4>Analysis &amp; optimisation</h4><em>The analyst</em><div class="who">Me</div></div>
+      </div>
+      <div class="two">
+        <div class="pane">
+          <h4>Capacity</h4>
+          <ul>
+            <li>Pillar two is the one that <b>eats the hours</b>, and the only one that scales with volume</li>
+            <li>Two editors on it means <b>more output than I can produce alone</b>, without the other three slipping</li>
+          </ul>
+        </div>
+        <div class="pane go">
+          <h4>Growth</h4>
+          <ul>
+            <li>Instead of me doing the heavy lifting, I <b>grow the team that does it</b></li>
+            <li>That gives Crystal and me the room to work on one, three and four &mdash; <b>learning and implementing systems and strategy</b> rather than producing</li>
           </ul>
         </div>
       </div>
@@ -674,7 +727,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
   <span class="who">Editor team proposal</span>
   <span class="sp"></span>
   <button type="button" id="prev">&larr; Back</button>
-  <span class="n" id="n">1 / 11</span>
+  <span class="n" id="n">1 / 12</span>
   <button type="button" id="next">Next &rarr;</button>
 </div>
 
