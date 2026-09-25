@@ -461,33 +461,6 @@ h2{font-size:clamp(24px,3.7vw,42px)}
 
   <section class="slide">
     <div class="inner">
-      <div class="act"><i>2</i> The why</div>
-      <div class="eyebrow">What we have already tried</div>
-      <h2>When editing comes bundled with production</h2>
-      <p class="lede">Three engagements, three versions of the same outcome. None of this is about the people we hired &mdash; it is what happens when one team is asked to shoot and cut, usually without a brief.</p>
-      <div class="hist">
-        <div class="hi">
-          <div class="hw">Veydris &mdash; Nancy x ASAP <em>HK$18,000 &asymp; $2,308</em></div>
-          <div class="then"><span>What came back</span><p>One highlight.</p></div>
-          <div class="now alt"><span>Why</span><p>Limited exposure to the brand, and <b>no brief to work from</b>. The result was not what we expected because nothing had told them what to expect.</p></div>
-        </div>
-        <div class="hi">
-          <div class="hw">Filmed by Harrison &mdash; Brighton <em>&pound;850 &asymp; $1,139</em></div>
-          <div class="then"><span>What came back</span><p>Event highlights, which we finished on our end.</p></div>
-          <div class="now alt"><span>Why</span><p>He was shooting as well. So the cut arrived finished and <b>the hook had to be found afterwards</b> &mdash; the reverse of starting from the hook and cutting to it.</p></div>
-        </div>
-        <div class="hi">
-          <div class="hw">Corrine <em>cost being confirmed</em></div>
-          <div class="then"><span>What came back</span><p>The same shape of result again.</p></div>
-          <div class="now alt"><span>Why</span><p>We hired an editor, but with <b>no uploader on the team they became the uploader</b>. The editing was never the job it ended up being.</p></div>
-        </div>
-      </div>
-      <div class="quote">If we bring in a production team, let them shoot. That is what they are good at, and it is what we actually need from them.</div>
-    </div>
-  </section>
-
-  <section class="slide">
-    <div class="inner">
       <div class="act"><i>3</i> The how</div>
       <div class="eyebrow">What I build, and who we look for</div>
       <h2>Not all editors can adapt.<br>That is what we are hiring for.</h2>
@@ -606,6 +579,33 @@ h2{font-size:clamp(24px,3.7vw,42px)}
         bands, and how the lead-in days are priced. I bring you the trial results and a short written
         assessment first. <b>A yes on the trial days by</b> <span class="blank"></span>
       </p>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="act appx"><i>+</i> Appendix &mdash; not presented</div>
+      <div class="eyebrow">What we have already tried</div>
+      <h2>When editing comes bundled with production</h2>
+      <p class="lede">Three engagements, three versions of the same outcome. None of this is about the people we hired &mdash; it is what happens when one team is asked to shoot and cut, usually without a brief.</p>
+      <div class="hist">
+        <div class="hi">
+          <div class="hw">Veydris &mdash; Nancy x ASAP <em>HK$18,000 &asymp; $2,308</em></div>
+          <div class="then"><span>What came back</span><p>One highlight.</p></div>
+          <div class="now alt"><span>Why</span><p>Limited exposure to the brand, and <b>no brief to work from</b>. The result was not what we expected because nothing had told them what to expect.</p></div>
+        </div>
+        <div class="hi">
+          <div class="hw">Filmed by Harrison &mdash; Brighton <em>&pound;850 &asymp; $1,139</em></div>
+          <div class="then"><span>What came back</span><p>Event highlights, which we finished on our end.</p></div>
+          <div class="now alt"><span>Why</span><p>He was shooting as well. So the cut arrived finished and <b>the hook had to be found afterwards</b> &mdash; the reverse of starting from the hook and cutting to it.</p></div>
+        </div>
+        <div class="hi">
+          <div class="hw">Corrine <em>cost being confirmed</em></div>
+          <div class="then"><span>What came back</span><p>The same shape of result again.</p></div>
+          <div class="now alt"><span>Why</span><p>We hired an editor, but with <b>no uploader on the team they became the uploader</b>. The editing was never the job it ended up being.</p></div>
+        </div>
+      </div>
+      <div class="quote">If we bring in a production team, let them shoot. That is what they are good at, and it is what we actually need from them.</div>
     </div>
   </section>
 
@@ -731,7 +731,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
   <span class="who">Editor team proposal</span>
   <span class="sp"></span>
   <button type="button" id="prev">&larr; Back</button>
-  <span class="n" id="n">1 / 8</span>
+  <span class="n" id="n">1 / 7</span>
   <button type="button" id="next">Next &rarr;</button>
 </div>
 
@@ -745,7 +745,7 @@ let i = 0;
 function show(n){
   i = Math.max(0, Math.min(slides.length - 1, n));
   slides.forEach((s, k) => s.classList.toggle("on", k === i));
-  const LIVE = 8;
+  const LIVE = 7;
   document.getElementById("n").textContent =
     i < LIVE ? (i + 1) + " / " + LIVE
              : "Appendix " + (i - LIVE + 1) + " / " + (slides.length - LIVE);
