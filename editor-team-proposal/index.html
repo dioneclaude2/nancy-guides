@@ -46,6 +46,21 @@
 .two.dl{margin-top:16px}
 .two.dl .blank{min-width:90px}
 
+.areas{display:grid;gap:8px;margin-top:18px}
+@media (min-width:900px){.areas{grid-template-columns:1fr 1fr;grid-auto-flow:row dense}}
+.ar{display:grid;grid-template-columns:20px 1fr auto;gap:0 11px;align-items:baseline;
+    border:1px solid var(--line);background:#fff;padding:9px 14px}
+.ar.take{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+@media (min-width:900px){.ar.take{grid-row:span 1}}
+.ar .an{font-family:var(--serif);font-weight:700;font-size:15px;color:var(--soft)}
+.ar.take .an{color:var(--accent)}
+.ar h4{font-size:clamp(12.5px,1.35vw,14.5px)}
+.ar em{grid-column:2;font-family:var(--alt);font-style:italic;font-size:11.5px;
+       color:var(--soft);display:block;margin-top:2px}
+.ar .who{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;
+         color:var(--soft);white-space:nowrap}
+.ar.take .who{color:var(--accent)}
+
 .act.appx{border-color:#E8DCC4;background:var(--warn-soft);color:var(--warn)}
 .act.appx i{background:var(--warn)}
 
@@ -352,29 +367,32 @@ h2{font-size:clamp(24px,3.7vw,42px)}
     <div class="inner">
       <div class="act"><i>3</i> The risk</div>
       <div class="eyebrow">Capacity and scale potential</div>
-      <h2>Four pillars in social media.<br>Right now they sit on the same two people.</h2>
+      <h2>Social media runs on seven areas.<br>One name is on all seven.</h2>
       <p class="lede">
         Possible? Yes &mdash; it is what we have been doing. <b>Sustainable, and able to scale? No.</b>
       </p>
-      <div class="pillars">
-        <div class="pil"><span class="pn">1</span><h4>Strategy &amp; research</h4><em>The strategist</em><div class="who">Crystal &amp; me</div></div>
-        <div class="pil take"><span class="pn">2</span><h4>Creation &amp; production</h4><em>The editor, designer, writer</em><div class="who">Mostly me &rarr; the team</div></div>
-        <div class="pil"><span class="pn">3</span><h4>Management &amp; distribution</h4><em>The social media manager</em><div class="who">Crystal &amp; me</div></div>
-        <div class="pil"><span class="pn">4</span><h4>Analysis &amp; optimisation</h4><em>The analyst</em><div class="who">Crystal &amp; me</div></div>
+      <div class="areas">
+        <div class="ar"><span class="an">1</span><h4>Strategy &amp; research</h4><div class="who">Crystal &amp; me</div></div>
+        <div class="ar"><span class="an">5</span><h4>Posting &amp; scheduling</h4><div class="who">Me</div></div>
+        <div class="ar"><span class="an">2</span><h4>Collaboration with Forge and Susan</h4><div class="who">Crystal &amp; me</div></div>
+        <div class="ar"><span class="an">6</span><h4>Asset management &amp; coordination</h4><div class="who">Me</div></div>
+        <div class="ar take"><span class="an">3</span><h4>Content production &amp; editing</h4><em>Quick turnaround and hitting the timeline lands on me</em><div class="who">Me &amp; Remo &rarr; the team</div></div>
+        <div class="ar"><span class="an">7</span><h4>Analysis &amp; data</h4><div class="who">Crystal &amp; me</div></div>
+        <div class="ar"><span class="an">4</span><h4>Community management</h4><div class="who">Daphne &amp; me</div></div>
       </div>
       <div class="two">
         <div class="pane">
           <h4>Capacity</h4>
           <ul>
-            <li>Pillar two <b>eats the hours</b>, and is the only one that scales with volume</li>
-            <li>Two editors on it means <b>more output</b>, without the other three slipping</li>
+            <li>Area three <b>eats the hours</b>, and is the only one that scales with volume</li>
+            <li>Two editors on it means <b>more output</b>, without the other six slipping</li>
           </ul>
         </div>
         <div class="pane go">
           <h4>Scale potential</h4>
           <ul>
             <li>We <b>grow the team that does the heavy lifting</b></li>
-            <li>Room to work on one, three and four &mdash; <b>systems and strategy</b>, not producing</li>
+            <li>Room for <b>strategy, analysis and systems</b> instead of production</li>
           </ul>
         </div>
       </div>
