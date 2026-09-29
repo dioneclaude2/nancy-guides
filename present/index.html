@@ -46,6 +46,34 @@
 .two.dl{margin-top:16px}
 .two.dl .blank{min-width:90px}
 
+/* editorial masthead treatment, slide three only */
+.ed .lede{margin-top:12px;font-size:clamp(13.5px,1.4vw,16px)}
+.ed .roster{margin-top:20px;border-top:1px solid var(--ink);gap:0}
+.ed .pr{grid-template-columns:minmax(190px,0.9fr) 1.5fr;gap:0 clamp(24px,4vw,56px);
+        border:0;border-bottom:1px solid var(--line);background:none;box-shadow:none;
+        padding:11px 0 10px;align-items:start}
+.ed .pr.take{border-bottom:1px solid var(--accent);box-shadow:none}
+.ed .pname{font-family:var(--serif);font-weight:200;font-size:clamp(23px,2.9vw,34px);
+           line-height:.98;min-width:0;letter-spacing:-.015em}
+.ed .pr.take .pname{color:var(--accent);font-style:italic}
+.ed .pname i{display:block;font-family:var(--alt);font-style:normal;font-weight:600;
+             font-size:9.5px;letter-spacing:.2em;color:var(--soft);margin-bottom:6px}
+.ed .pr.take .pname i{color:var(--accent)}
+.ed .pname em{display:block;font-family:var(--alt);font-style:normal;font-weight:600;
+              font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;
+              color:var(--soft);margin-top:6px}
+.ed .pas{font-family:var(--alt);font-size:clamp(11.5px,1.2vw,13px);line-height:1.6;
+         color:var(--soft);padding-top:3px}
+.ed .pas b{font-weight:600;color:var(--ink)}
+.ed .pr.take .pas{color:var(--ink)}
+.ed .note{margin-top:11px;font-family:var(--alt);font-size:11.5px;letter-spacing:.01em}
+.ed .two{margin-top:15px;gap:clamp(24px,4vw,56px)}
+.ed .pane{border:0;border-top:1px solid var(--ink);background:none;box-shadow:none;padding:13px 0 0}
+.ed .pane.go{border:0;border-top:1px solid var(--accent);box-shadow:none;background:none;padding:13px 0 0}
+.ed .pane h4{font-size:9.5px;letter-spacing:.2em}
+.ed .pane li{padding:4px 0;padding-left:0;font-family:var(--alt);line-height:1.55;font-size:clamp(11.5px,1.2vw,13px)}
+.ed .pane li:before{display:none}
+
 .roster{display:grid;gap:8px;margin-top:20px}
 .pr{display:grid;grid-template-columns:auto 1fr;gap:0 18px;align-items:start;
     border:1px solid var(--line);background:#fff;padding:11px 16px}
@@ -376,30 +404,30 @@ h2{font-size:clamp(24px,3.7vw,42px)}
   </section>
 
   <section class="slide">
-    <div class="inner">
+    <div class="inner ed">
       <div class="act"><i>3</i> The risk</div>
-      <div class="eyebrow">Capacity and scale potential</div>
-      <h2>Who owns what in social media</h2>
+      <div class="eyebrow">Who runs social media</div>
+      <h2>The masthead<br>as it stands today</h2>
       <p class="lede">
         The work as it is divided today. <b>Possible? Yes &mdash; it is what we have been doing.
         Sustainable? No.</b>
       </p>
       <div class="roster">
         <div class="pr">
-          <div class="pname">Crystal<em>Head of marketing</em></div>
+          <div class="pname"><i>01</i>Crystal<em>Head of marketing</em></div>
           <div class="pas"><b>Runs marketing as a whole.</b> Hands-on in strategy &amp; research, creative direction,
             event management, event design and layouts, collaboration with the content creator teams, and analysis.</div>
         </div>
         <div class="pr">
-          <div class="pname">Remo<em>Editor</em></div>
+          <div class="pname"><i>02</i>Remo<em>Editor</em></div>
           <div class="pas">Content production &amp; editing</div>
         </div>
         <div class="pr">
-          <div class="pname">Daphne<em>Community</em></div>
+          <div class="pname"><i>03</i>Daphne<em>Community</em></div>
           <div class="pas">Community management</div>
         </div>
         <div class="pr take">
-          <div class="pname">Dion&eacute;<em>Social media and content</em></div>
+          <div class="pname"><i>04</i>Dion&eacute;<em>Social media and content</em></div>
           <div class="pas">Content production &amp; editing &middot; Social media management, posting and scheduling &middot;
             Asset management and coordination &middot; Community management &middot; Strategy &amp; research &middot;
             Collaboration with the content creator teams &middot; Analysis &amp; data compilation</div>
