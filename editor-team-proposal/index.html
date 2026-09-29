@@ -505,12 +505,77 @@ h2{font-size:clamp(31px,4.1vw,52px)}
 .ed .roster.sub .pr{padding:7px 0 6px}
 .pull{grid-template-columns:auto 1fr}
 
+/* ============ RHYTHM ============ */
+.slide{padding:clamp(34px,5vw,70px) clamp(36px,6.5vw,104px) 78px}
+.inner{max-width:1180px}
+.lede{margin-top:18px}
+
+/* ---- slide two: rates as cards, the figure is the point ---- */
+.rates{display:grid;gap:clamp(28px,4.6vw,64px);margin-top:34px}
+@media (min-width:820px){.rates{grid-template-columns:1fr 1fr}}
+.rt{border-top:1px solid var(--ink);padding-top:16px}
+.rt.on{border-top-color:var(--accent)}
+.rt .rl{font-family:var(--serif);font-weight:200;font-size:clamp(26px,3.3vw,40px);
+        line-height:1.05;letter-spacing:-.02em}
+.rt.on .rl{color:var(--accent)}
+.rt .rf{margin:20px 0 16px}
+.rt .rf .blank{min-width:min(260px,100%);border-bottom-width:2px;height:34px;display:block}
+.rt p{margin:0;font-family:var(--alt);font-size:clamp(13.5px,1.45vw,16.5px);
+      line-height:1.5;color:var(--soft);max-width:34ch}
+
+/* ---- slide five: routes ---- */
+.route{width:100%;height:auto;max-width:330px;display:block;margin:16px 0 14px}
+
+/* ---- slide four: the curves get room ---- */
+.ch svg{height:clamp(130px,18vh,180px)}
+
+/* ---- slide eight: the numerals lead ---- */
+.dc{grid-template-columns:clamp(54px,6vw,88px) 1fr;gap:0 clamp(18px,2.4vw,32px);padding:20px 0}
+.dc .dn{font-family:var(--serif)!important;font-weight:200;font-size:clamp(34px,4.4vw,58px);
+        letter-spacing:-.02em;line-height:.9;margin-top:2px;color:var(--line)}
+.dc.yes .dn{color:var(--accent)}
+
+/* ================= ART DIRECTION ================= */
+
+/* --- the cover: our own work, full bleed --- */
+.slide.cover{padding-right:0}
+.slide.cover .inner{max-width:none;width:min(54%,660px);margin:0}
+@media (max-width:900px){.slide.cover{padding-right:clamp(36px,6.5vw,104px)}
+  .slide.cover .inner{width:100%}}
+.coverart{position:absolute;top:0;right:0;bottom:0;width:42%;
+  display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:1fr;gap:3px;overflow:hidden}
+.coverart img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width:900px){.coverart{position:static;width:auto;height:180px;
+  grid-template-columns:repeat(6,1fr);margin-top:26px}}
+.slide.cover h1{font-size:clamp(38px,4.6vw,60px)}
+.slide.cover .asks{grid-template-columns:1fr;gap:0;margin-top:26px;
+  border-top:1px solid var(--ink)}
+.slide.cover .ask{display:grid;grid-template-columns:auto 1fr;gap:0 clamp(20px,3vw,40px);
+  align-items:baseline;border-top:0;border-bottom:1px solid var(--line);padding:13px 0}
+.slide.cover .ask .al{grid-row:1;align-self:center;min-width:104px;margin:0}
+.slide.cover .ask .av{grid-row:1;margin:0;font-size:clamp(30px,3.6vw,44px)}
+.slide.cover .ask .chips{grid-row:1;margin:0}
+.slide.cover .ask p{grid-column:2;font-size:13.5px;margin-top:4px;color:var(--soft)}
+.slide.cover .mark{margin-top:26px}
+
+/* --- the close: ink --- */
+.slide.dark{background:var(--ink)}
+.slide.dark h2,.slide.dark .dc h4{color:var(--paper)}
+.slide.dark .eyebrow,.slide.dark .dc p,.slide.dark .note{color:#A49BAE}
+.slide.dark .note b{color:var(--paper)}
+.slide.dark .act{background:transparent;border-color:rgba(253,247,245,.28);color:#A49BAE}
+.slide.dark .dec{border-top-color:rgba(253,247,245,.42)}
+.slide.dark .dc{border-bottom-color:rgba(253,247,245,.15)}
+.slide.dark .dc.later{background:none}
+.slide.dark .dc.later .dn{color:rgba(253,247,245,.3)}
+.slide.dark .blank{border-bottom-color:rgba(253,247,245,.55)}
+
 </style>
 
 <div class="prog"><i id="pg"></i></div>
 <div class="deck" id="deck">
 
-  <section class="slide">
+  <section class="slide cover">
     <div class="inner">
       <div class="act"><i>1</i> The ask</div>
       <h1>Two editors now,<br>our social media team later.</h1>
@@ -530,9 +595,9 @@ h2{font-size:clamp(31px,4.1vw,52px)}
           <div class="chips"><b>Efficiency</b><b>Capacity</b><b>Scale potential</b></div>
         </div>
       </div>
-      <div class="strip slim" id="strip"></div>
       <div class="mark"><img src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDYwMCAyMTkuNCI+PGRlZnM+PHN0eWxlPi5ke2ZpbGw6I0ZERjdGNTt9PC9zdHlsZT48L2RlZnM+PGcgaWQ9ImEiLz48ZyBpZD0iYiI+PGcgaWQ9ImMiPjxnPjxwYXRoIGNsYXNzPSJkIiBkPSJNMzg3LjA0LDExOC44MWMtNy4yNS02LjQ0LTkuNjktMTEuODEtOS42OS0yMi4yNSwwLTkuNjcsMy4wNi0xOS4xOCwzLjA2LTI5LjA1LDAtMTkuMDEtNi0zMi45NC0zNi42NS0zMi45NC0xNC41MSwwLTI0LjM5LDcuNzYtMzEuNjQsMTYuMjEsLjItMS4yMSwuNi0yLjYyLDEuMDEtNC4wMywuNC0xLjYxLC42LTMuMjIsLjYtNC40MywwLTQuNDMtMi4wNy03LjQ1LTUuOTMtNy42Ny0xLjQxLS4wOC00LjM4LS4xNi02Ljg4LC41My01Ljc1LDEuNjktNi4zMSw1LjI1LTE3LjE1LDYuNS05Ljc3LDEuMTItMTEuOTUtMS43OC0yMC4zNC0xLjc4LTMuMjIsMC02LjE4LDIuNjctNi4xOCw1LjY5czEuMzgsNS45OSw0Ljg3LDcuMjVjOC42MiwzLjA5LDEyLjE2LDE0LjAzLDEyLjM3LDI2LjcxLC4xOSwxMC45Ny0zLjA4LDIyLjIzLTcuMjIsMzAuMTUtNC40MSw4LjQ0LTExLjM5LDYuOTEtMTIuMTQsNi43My0xMi40OS0zLjIyLTkuMjgtMTguMTQtOS45OC0zMy4wNC0xLjAzLTIxLjg0LTUuNTktNDkuNjMtNTguMzctNDkuNjMtMzAuNjIsMC00Mi4xLDExLjI4LTQyLjEsMjEuMTUsMCw3Ljg1LDcuMjUsMTQuOTEsMTcuNTIsMTQuOTEsMjMuNzcsMCw4Ljg3LTI3Ljk1LDI1Ljk5LTI3Ljk1LDYuMjQsMCwxMy4yOSw2LjE5LDE3LjkzLDIyLjMtMS42MSwxNi4xMi02Ni40NywxNi45Mi02Ni40Nyw1MC43NywwLDE1LjMxLDEyLjg5LDIzLjM2LDI4LjIsMjMuMzZzMzUuNTctOC44Nyw0NC4wMy0yOC4wMWMwLDIuNDItLjM2LDYuODEtLjQzLDkuMjMtLjMyLDEyLjE5LDQuMTEsMTguMjksMTEuNTgsMTkuNjQsNi4zMiwxLjE0LDIwLjEyLS44LDIzLjUtMi4yNywxLjk2LS44Niw1Ljk5LTQuMjIsOC00LjI5LDIuODEtLjA5LDMuNzUsMy42Niw3LjU5LDMuODksMTIuNTgsLjc2LDUyLjAzLC43LDUyLjAzLC43LDQuMDMsMCw2Ljg0LTIuODIsNi44NC03LjA1LDAtMy44My0yLjAxLTcuODUtNS42NC0xMS4yOC03Ljg2LTcuNDUtMTAuODgtMTkuMTQtOC44Ni0zNy40NywyLjYyLTE3LjUyLDEyLjA2LTI5LjcxLDIyLjEzLTI5LjcxLDEyLjQ5LDAsMTYuOTUsMTMuMzksMTYuOTUsMjguMXMtNS4yNCwzMS4wMi0xNC4xMSwzOS40OWMtMy42MiwzLjIyLTUuNjQsNy4wNS01LjY0LDEwLjY4LDAsNC40MywyLjgyLDcuMjUsNy4wNSw3LjI1aDUyLjM3YzQuMjMsMCw3LjY2LTIuOTIsNy42Ni03LjE2LC4wMS00LjYxLTIuMjQtOC4yMS01Ljg2LTExLjIzbS0xOTkuNjUtOS4wOWMtNS44NCwwLTguODYtMy44My04Ljg2LTguNjcsMC0xMi44OSwyMS4zNS0xNS41MSwzMC4yMi0yNC4xNywuNCwyLjgzLC44LDUuNjQsMSw4Ljg3LDAsMTUuMS04LjI2LDIzLjk3LTIyLjM2LDIzLjk3Ii8+PHBhdGggY2xhc3M9ImQiIGQ9Ik00NDUuNywxMzguNTJjLTI5LjYxLDAtNTUuNi0xOC43My01NS42LTUyLjE3czI1Ljk5LTUyLjE3LDU1LjYtNTIuMTdjMjYuNTksMCw0MC4wOSwxMy45LDQwLjA5LDI1Ljk4cy05LjQ3LDE4Ljc0LTE4LjUzLDE4Ljc0Yy03Ljg2LDAtMTUuMTEtNS4wNC0xNS43MS0xNS43MS0uNjEtOS44Ny0zLjAyLTE5LjM0LTE0LjUtMTkuMzQtOS42NywwLTE0LjUsMTAuNjgtMTQuNSwyMy4zNywwLDIwLjU1LDEyLjA2LDQ3Ljc4LDM2LjQzLDQ3Ljc4LDcuODEsMCwyMC4xNy00LjQ3LDI2LjAxLTE0Ljk1LC40LS42LDEuMjEtMS4wMSwyLjAxLTEuMDEsMi42MiwwLDYuNjUsMi42Miw0LjgzLDYuNjUtOC44NiwyMC4xNC0yMy4zNiwzMi44My00Ni4xMywzMi44MyIvPjxwYXRoIGNsYXNzPSJkIiBkPSJNNTUyLjQ2LDQxLjgzYzAtMi42MiwxLjYxLTUuMjQsNC44My02LjA0LDYuMjUtMS40MSwxNS45MS0zLjIyLDI0LjU4LTMuMjIsOS42NywwLDE4LjEzLDIuMjIsMTguMTMsOS40NywwLDIuNDItLjA5LDQuNi0yLjMsOC4yMmwtMTEuMTIsMTkuODctNTQuODYsOTUuNTljLTYuMjQsMTEuMDgtOS44MiwxNS4xMS0xOS41NCwxNS4xMS0xMy4zLDAtMjQuNzgtMTcuMTItMjQuNzgtMjkuMDEsMC02LjQ1LDMuNDMtMTEuNDgsMTEuNDgtMTEuNDgsMi4yMiwwLDQuNzUtLjIzLDcuNzcsLjc4LDUuNDQsMS42MSw1LjYyLDMuOTQsMTMuMTksNC4wNiw0LjA2LC4wNyw1LjA4LS40MSw2Ljc1LTEuNjksMi4zNy0xLjgxLDMuMzctNC40OSwzLjM3LTguMzEsMC0yMS4zNS0yNy42Ni04MC4yNi0zNS41MS04My4wOC0zLjYzLTEuNDEtNS44NC0zLjQyLTYuMjUtNi40NC0uNi0zLjAyLDEuMDEtNS4wNCw0LjIzLTUuMDQsMTYuNTIsMCwyNi43LTEuMjUsMzcuNzgtNC42OCwxLjYxLS40LDMuNjktMS43Nyw1Ljc0LTEuNTcsNS4zOCwuNTIsOS40Miw0LjU2LDkuMDEsMTEuODItLjIsMS4yMS0uNTQsMi4zMy0uOTYsNC4xLTEuNjcsNy4wOS0yLjE2LDE1LjA0LTEuMDQsMjMuNTksMS41NCwxMS44MSw2Ljk2LDIyLjc0LDExLjUyLDIyLjc0LC44MSwwLDIuODUsLjE5LDMuOTEtMS40NCw0LjI0LTEwLjAzLDguNjktMjEuNjYsOC42OS0zMS4xMiwwLTcuODctNC4yNS0xMy4yNS05Ljk4LTE1LjU5LTMuMDMtMS4yLTQuNjQtMy44Mi00LjY0LTYuNjQiLz48cGF0aCBjbGFzcz0iZCIgZD0iTTI4LDM1Ljg2Yy0xLjAxLDMwLjQyLDguODYsNzIuMTIsMjAuNTUsODYuNDIsMy40Myw0LjIzLDUuMjQsOC4yNiw1LjI0LDExLjY5LDAsNC4yMy0yLjgyLDcuMDUtNy4wNSw3LjA1SDYuODVjLTQuMjMsMC02Ljg1LTIuODItNi44NS03LjA1LDAtMy4yMiwxLjYxLTYuODUsNS4yNC0xMS40OCw3LjY1LTkuODcsMTEuODktMzEuMjIsMTEuODktNTIuNThTMTMuMywyOS4wMSw1LjA0LDE4Ljc0QzEuNjIsMTQuNTEsMCwxMC40OCwwLDcuMDUsMCwyLjgyLDIuNjIsMCw2Ljg1LDBIMzkuNjhjNC4wMywwLDYuNDUsMy4yMiw5LjI3LDYuODUsMTYuNjksMjMuMzcsMzYuMzcsNTMuNDYsNjAuMjUsODYuNDQsMC0zOC45OC01LjI1LTU5LjUzLTE3Ljk0LTc0LjU1LTMuNDMtNC4yMy01LjI0LTguMjYtNS4yNC0xMS42OSwwLTQuMjMsMi44Mi03LjA1LDcuMDUtNy4wNWgzOS44OWM0LjIzLDAsNy4wNSwyLjgyLDcuMDUsNy4wNSwwLDMuMjItMS44MSw2Ljg1LTUuNDQsMTEuNDgtOC44NiwxMS4yOC0xNC41LDM4LjQ4LTE0LjUsNjMuNDYsMCwxNS4xMSwyLjAxLDI5LjYxLDcuMDUsMzguNjgsLjg2LDEuMzQsNS4yNywxMS40NywxMi41MywyMS44OCw3Ljk5LDExLjQ1LDE5LjA4LDIzLjQ1LDI0LjYxLDI5LjQzLDE1Ljg0LDE3LjE2LDMyLjU1LDI2LjY0LDQ0LjA0LDI2LjY0LDUuMjQsMCwxMS4yNy0uMjksMTEuMjctNC41MiwwLTcuMTItMTkuMTYtNC44Ny0xOS4xNi0yMi41LDAtNy44NywxMS40Ny0xNC40NCwxOC40MS0xNC40NCwxNC43MSwwLDIxLjMxLDguODIsMjEuMzEsMjEuMTEsMCwxOC4zMy0xNS45NCw0Mi4yNi00Ni45NCw0MS4wOS02Ni44NC0yLjUtMTAyLjM0LTExNy42Mi0xNjUuMTktMTgzLjUiLz48L2c+PC9nPjwvZz48L3N2Zz4=" alt="Nancy"></div>
     </div>
+    <div class="coverart" id="strip"></div>
   </section>
 
   <section class="slide">
@@ -544,10 +609,17 @@ h2{font-size:clamp(31px,4.1vw,52px)}
         Not experience levels. Both can already cut without hand-holding; <b>both have to be
         adaptive.</b>
       </p>
-      <div class="tbl">
-        <div class="tr head"><div class="l">What we are hiring for</div><div class="v">Hourly &middot; per event day (8&ndash;13 hrs)</div></div>
-        <div class="tr us"><div class="l">Adaptive<small>Cuts on their own, and keeps up when the brief moves mid-event</small></div><div class="v"><span class="blank"></span></div></div>
-        <div class="tr us"><div class="l">Adaptive creative<small>All of that, and improves the content &mdash; brings references, calls the hook</small></div><div class="v"><span class="blank"></span></div></div>
+      <div class="rates">
+        <div class="rt">
+          <div class="rl">Adaptive</div>
+          <div class="rf"><span class="blank"></span></div>
+          <p>Cuts on their own, and keeps up when the brief moves mid-event</p>
+        </div>
+        <div class="rt on">
+          <div class="rl">Adaptive creative</div>
+          <div class="rf"><span class="blank"></span></div>
+          <p>All of that, and improves the content &mdash; brings references, calls the hook</p>
+        </div>
       </div>
       <p class="note">
         <b>Rates to confirm.</b> Waiting on what Corrine and Shabir currently pay their editors,
@@ -654,14 +726,30 @@ h2{font-size:clamp(31px,4.1vw,52px)}
         <b>That has to be taught.</b>
       </p>
       <div class="paths">
-        <div class="pth bad">
+        <div class="pth">
           <div class="pl">A team in between</div>
-          <div class="flow"><i>Crystal &amp; Dion&eacute;</i><b>&rarr;</b><i>that team</i><b>&rarr;</b><i>editors</i></div>
+          <svg class="route" viewBox="0 0 320 44" aria-label="Crystal and Dione brief a team, who brief the editors">
+            <line x1="26" y1="16" x2="160" y2="16" stroke="#C9BFC6" stroke-width="1.5"/>
+            <line x1="160" y1="16" x2="294" y2="16" stroke="#C9BFC6" stroke-width="1.5"/>
+            <circle cx="26" cy="16" r="6" fill="#6E6579"/>
+            <circle cx="160" cy="16" r="6" fill="none" stroke="#6E6579" stroke-width="1.5"/>
+            <circle cx="294" cy="16" r="6" fill="none" stroke="#6E6579" stroke-width="1.5"/>
+            <g fill="#6E6579" font-size="9" font-family="Helvetica" letter-spacing="1.2" text-anchor="middle">
+              <text x="26" y="38">US</text><text x="160" y="38">THAT TEAM</text><text x="294" y="38">EDITORS</text>
+            </g>
+          </svg>
           <p><b>Briefed twice.</b> Double work, context lost at every hop.</p>
         </div>
         <div class="pth good">
           <div class="pl">Straight from us</div>
-          <div class="flow"><i>Crystal &amp; Dion&eacute;</i><b>&rarr;</b><i>editors</i></div>
+          <svg class="route" viewBox="0 0 320 44" aria-label="Crystal and Dione brief the editors directly">
+            <line x1="26" y1="16" x2="294" y2="16" stroke="#FF30CC" stroke-width="1.5"/>
+            <circle cx="26" cy="16" r="6" fill="#FF30CC"/>
+            <circle cx="294" cy="16" r="6" fill="#FF30CC"/>
+            <g fill="#FF30CC" font-size="9" font-family="Helvetica" letter-spacing="1.2" text-anchor="middle">
+              <text x="26" y="38">US</text><text x="294" y="38">EDITORS</text>
+            </g>
+          </svg>
           <p><b>Briefed once</b>, by the people living the changes.</p>
         </div>
       </div>
@@ -745,18 +833,18 @@ h2{font-size:clamp(31px,4.1vw,52px)}
     </div>
   </section>
 
-  <section class="slide">
+  <section class="slide dark">
     <div class="inner">
       <div class="act"><i>5</i> Decision</div>
       <div class="eyebrow">Decision</div>
       <h2>What I need<br>from you today</h2>
       <div class="dec">
-        <div class="dc yes"><div class="dn">1</div><div><h4>Approve the paid trial days.</h4>
+        <div class="dc yes"><div class="dn">01</div><div><h4>Approve the paid trial days.</h4>
           <p>Up to four candidates, one paid day each. <b>That is the entire spend being approved
              today</b> &mdash; the figure lands with the rates.</p></div></div>
-        <div class="dc yes"><div class="dn">2</div><div><h4>Confirm the headcount I am sourcing towards.</h4>
+        <div class="dc yes"><div class="dn">02</div><div><h4>Confirm the headcount I am sourcing towards.</h4>
           <p>Two, or a different number &mdash; I need it before I start sourcing.</p></div></div>
-        <div class="dc yes"><div class="dn">3</div><div><h4>Send the confidentiality draft to whoever handles contracts.</h4>
+        <div class="dc yes"><div class="dn">03</div><div><h4>Send the confidentiality draft to whoever handles contracts.</h4>
           <p>Nobody starts paid work before it is signed, so this is the one item that can block the timeline.</p></div></div>
       </div>
       <p class="note">
