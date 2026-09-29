@@ -46,6 +46,18 @@
 .two.dl{margin-top:16px}
 .two.dl .blank{min-width:90px}
 
+.roster{display:grid;gap:8px;margin-top:20px}
+.pr{display:grid;grid-template-columns:auto 1fr auto;gap:0 16px;align-items:baseline;
+    border:1px solid var(--line);background:#fff;padding:11px 16px}
+.pr.take{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
+.pr .pname{font-family:var(--serif);font-size:clamp(16px,1.8vw,20px);min-width:84px}
+.pr.take .pname{color:var(--accent)}
+.pr .pas{font-size:clamp(12px,1.3vw,14px);line-height:1.45;color:var(--soft)}
+.pr.take .pas{color:var(--ink)}
+.pr .pct{font-family:var(--alt);font-weight:600;font-size:11px;letter-spacing:.12em;
+         text-transform:uppercase;color:var(--soft);white-space:nowrap}
+.pr.take .pct{color:var(--accent)}
+
 .areas{display:grid;gap:8px;margin-top:18px}
 @media (min-width:900px){.areas{grid-template-columns:1fr 1fr;grid-auto-flow:column;grid-template-rows:repeat(4,auto)}}
 .ar{display:grid;grid-template-columns:20px 1fr auto;gap:0 11px;align-items:baseline;
@@ -366,30 +378,47 @@ h2{font-size:clamp(24px,3.7vw,42px)}
     <div class="inner">
       <div class="act"><i>3</i> The risk</div>
       <div class="eyebrow">Capacity and scale potential</div>
-      <h2>Social media runs on seven areas.<br>One name is on all seven.</h2>
+      <h2>Who owns what in social media</h2>
       <p class="lede">
-        Possible? Yes &mdash; it is what we have been doing. <b>Sustainable, and able to scale? No.</b>
+        Four of us hold seven areas between us. <b>Possible? Yes &mdash; it is what we have been
+        doing. Sustainable? No.</b>
       </p>
-      <div class="areas">
-        <div class="ar"><span class="an">1</span><h4>Strategy &amp; research</h4><div class="who">Crystal &amp; me</div></div>
-        <div class="ar"><span class="an">2</span><h4>Collaboration with Forge and Susan</h4><div class="who">Crystal &amp; me</div></div>
-        <div class="ar take"><span class="an">3</span><h4>Content production &amp; editing</h4><em>Quick turnaround and hitting the timeline lands on me</em><div class="who">Me &amp; Remo &rarr; the team</div></div>
-        <div class="ar"><span class="an">4</span><h4>Community management</h4><div class="who">Daphne &amp; me</div></div>
-        <div class="ar"><span class="an">5</span><h4>Social media management</h4><em>Posting and scheduling</em><div class="who">Me</div></div>
-        <div class="ar"><span class="an">6</span><h4>Asset management</h4><em>And asset coordination</em><div class="who">Me</div></div>
-        <div class="ar"><span class="an">7</span><h4>Analysis</h4><em>And data compilation</em><div class="who">Crystal &amp; me</div></div>
+      <div class="roster">
+        <div class="pr">
+          <div class="pname">Crystal</div>
+          <div class="pas">Strategy &amp; research &middot; Collaboration with Forge and Susan &middot; Analysis &amp; data compilation</div>
+          <div class="pct">3 of 7</div>
+        </div>
+        <div class="pr">
+          <div class="pname">Remo</div>
+          <div class="pas">Content production &amp; editing</div>
+          <div class="pct">1 of 7</div>
+        </div>
+        <div class="pr">
+          <div class="pname">Daphne</div>
+          <div class="pas">Community management</div>
+          <div class="pct">1 of 7</div>
+        </div>
+        <div class="pr take">
+          <div class="pname">Dion&eacute;</div>
+          <div class="pas">All seven &mdash; and the only name on social media management and asset management</div>
+          <div class="pct">7 of 7</div>
+        </div>
       </div>
+      <p class="note">Forge and Susan sit outside the team &mdash; area two is our coordination with them.</p>
       <div class="two">
         <div class="pane">
-          <h4>Capacity</h4>
+          <h4>Why it does not scale</h4>
           <ul>
-            <li>Area three <b>eats the hours</b>, and is the only one that scales with volume</li>
-            <li>Two editors on it means <b>more output</b>, without the other six slipping</li>
+            <li><b>Two areas have no second person</b> &mdash; if one of us is out, they simply stop</li>
+            <li>Content production is the only area that <b>grows with volume</b>, and the deadline sits on one person</li>
+            <li>Everything routes through the same desk, so <b>one queue sets the pace of all seven</b></li>
           </ul>
         </div>
         <div class="pane go">
-          <h4>Scale potential</h4>
+          <h4>What two editors change</h4>
           <ul>
+            <li>Area three gets <b>real capacity</b>, without the other six slipping</li>
             <li>We <b>grow the team that does the heavy lifting</b></li>
             <li>Room for <b>strategy, analysis and systems</b> instead of production</li>
           </ul>
