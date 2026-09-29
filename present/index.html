@@ -47,10 +47,14 @@
 .two.dl .blank{min-width:90px}
 
 .roster{display:grid;gap:8px;margin-top:20px}
-.pr{display:grid;grid-template-columns:auto 1fr;gap:0 18px;align-items:baseline;
+.pr{display:grid;grid-template-columns:auto 1fr;gap:0 18px;align-items:start;
     border:1px solid var(--line);background:#fff;padding:11px 16px}
 .pr.take{border-color:var(--accent);box-shadow:0 0 0 1px var(--accent)}
-.pr .pname{font-family:var(--serif);font-size:clamp(16px,1.8vw,20px);min-width:84px}
+.pr .pname{font-family:var(--serif);font-size:clamp(16px,1.8vw,20px);min-width:120px;line-height:1.15}
+.pr .pname em{display:block;font-family:var(--alt);font-style:normal;font-weight:600;
+              font-size:10px;letter-spacing:.11em;text-transform:uppercase;
+              color:var(--soft);margin-top:4px}
+.pr.take .pname em{color:var(--accent)}
 .pr.take .pname{color:var(--accent)}
 .pr .pas{font-size:clamp(12px,1.3vw,14px);line-height:1.45;color:var(--soft)}
 .pr.take .pas{color:var(--ink)}
@@ -382,20 +386,20 @@ h2{font-size:clamp(24px,3.7vw,42px)}
       </p>
       <div class="roster">
         <div class="pr">
-          <div class="pname">Crystal</div>
-          <div class="pas">Strategy &amp; research &middot; Creative direction &middot; Event management &middot;
-            Event design and layouts &middot; Collaboration with Forge and Susan &middot; Analysis &amp; data compilation</div>
+          <div class="pname">Crystal<em>Head of marketing</em></div>
+          <div class="pas"><b>Runs marketing as a whole.</b> Hands-on in strategy &amp; research, creative direction,
+            event management, event design and layouts, collaboration with Forge and Susan, and analysis.</div>
         </div>
         <div class="pr">
-          <div class="pname">Remo</div>
+          <div class="pname">Remo<em>Editor</em></div>
           <div class="pas">Content production &amp; editing</div>
         </div>
         <div class="pr">
-          <div class="pname">Daphne</div>
+          <div class="pname">Daphne<em>Community</em></div>
           <div class="pas">Community management</div>
         </div>
         <div class="pr take">
-          <div class="pname">Dion&eacute;</div>
+          <div class="pname">Dion&eacute;<em>Social media and content</em></div>
           <div class="pas">Content production &amp; editing &middot; Social media management, posting and scheduling &middot;
             Asset management and coordination &middot; Community management &middot; Strategy &amp; research &middot;
             Collaboration with Forge and Susan &middot; Analysis &amp; data compilation</div>
@@ -408,7 +412,7 @@ h2{font-size:clamp(24px,3.7vw,42px)}
           <ul>
             <li><b>Two areas have no second person</b> &mdash; social media management and asset management stop if I am out</li>
             <li>Content production is the only area that <b>grows with volume</b>, and the deadline sits on one person</li>
-            <li><b>Crystal&rsquo;s scope is widening</b> into events, creative direction and design &mdash; the production load has nowhere else to move</li>
+            <li><b>Crystal is running marketing as a whole</b> &mdash; the production load has nowhere else to move</li>
           </ul>
         </div>
         <div class="pane go">
