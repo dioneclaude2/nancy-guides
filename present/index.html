@@ -68,11 +68,6 @@
 .ed .pr.take .pas{color:var(--ink)}
 .ed .note{margin-top:11px;font-family:var(--alt);font-size:11.5px;letter-spacing:.01em}
 .ed .two{margin-top:15px;gap:clamp(24px,4vw,56px)}
-.ed .pane{border:0;border-top:1px solid var(--ink);background:none;box-shadow:none;padding:13px 0 0}
-.ed .pane.go{border:0;border-top:1px solid var(--accent);box-shadow:none;background:none;padding:13px 0 0}
-.ed .pane h4{font-size:9.5px;letter-spacing:.2em}
-.ed .pane li{padding:4px 0;padding-left:0;font-family:var(--alt);line-height:1.55;font-size:clamp(11.5px,1.2vw,13px)}
-.ed .pane li:before{display:none}
 
 .roster{display:grid;gap:8px;margin-top:20px}
 .pr{display:grid;grid-template-columns:auto 1fr;gap:0 18px;align-items:start;
@@ -342,6 +337,103 @@ h2{font-size:clamp(24px,3.7vw,42px)}
 .sl a:hover{background:var(--accent-soft)}
 .sl span{display:block;font-size:clamp(11.5px,1.25vw,13px);line-height:1.45;color:var(--soft)}
 .sl span b{color:var(--ink)}
+/* ==================================================================
+   EDITORIAL SYSTEM — deck-wide. Hairline rules instead of cards,
+   display serif for figures, Fraunces for everything that is read.
+   ================================================================== */
+.eyebrow{letter-spacing:.2em;font-size:clamp(9px,.95vw,10.5px)}
+.act{padding:3px 10px 3px 3px;margin-bottom:16px;letter-spacing:.2em;font-size:9.5px}
+.act i{width:17px;height:17px;font-size:10px}
+h2{letter-spacing:-.015em;line-height:1.02}
+.lede{font-family:var(--alt);font-size:clamp(13px,1.4vw,16px);line-height:1.62;margin-top:14px}
+.note{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);line-height:1.6;margin-top:14px}
+
+/* --- a block: hairline above, tracked label, no fill --- */
+.pane,.tcard,.pth,.opt,.ch{border:0;background:none;box-shadow:none;
+     border-top:1px solid var(--ink);padding:12px 0 0;overflow:visible}
+.pane.go,.tcard.open,.pth.good,.ch.on{border:0;border-top:1px solid var(--accent);
+     box-shadow:none;background:none;padding:12px 0 0}
+.pane h4,.pth .pl,.opt .ol,.ch .chh{font-family:var(--alt);font-weight:600;font-size:9.5px;
+     letter-spacing:.2em;text-transform:uppercase;color:var(--soft);margin-bottom:10px}
+.pane.go h4,.pth.good .pl,.ch.on .chh{color:var(--accent)}
+.tcard .th{padding:0 0 10px;border:0;background:none;font-family:var(--alt);font-weight:600;
+     font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--soft)}
+.tcard.fixed .th{background:none;color:var(--soft)}
+.tcard.open .th{background:none;color:var(--accent)}
+.tcard ul{padding:0;list-style:none}
+.pane li,.tcard li{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);
+     line-height:1.55;padding:4px 0;color:var(--soft)}
+.pane li{padding-left:0}
+.pane li:before{display:none}
+.two,.terms,.chart,.paths,.opts{gap:clamp(22px,3.6vw,48px);margin-top:20px}
+
+/* --- slide 1: the ask --- */
+.ask{border:0;background:none;padding:12px 0 0;border-top:1px solid var(--ink)}
+.ask .al{font-family:var(--alt);font-size:9.5px;letter-spacing:.2em;color:var(--soft)}
+.ask .av{font-family:var(--serif);font-weight:200;font-size:clamp(34px,4.6vw,54px);
+     line-height:1;margin:10px 0 9px;letter-spacing:-.02em}
+.ask p{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);line-height:1.6}
+.asks{gap:clamp(22px,3.6vw,48px);margin-top:24px}
+.chips{gap:7px;margin:11px 0 10px}
+.chips b{font-family:var(--alt);font-size:clamp(11px,1.2vw,13px);letter-spacing:.02em;
+     background:none;border:0;border-bottom:1px solid var(--accent);padding:0 0 3px}
+.strip{gap:7px;margin-top:26px}
+.strip img{border:0}
+
+/* --- slide 2: the ledger --- */
+.tbl{border:0;background:none;margin-top:22px;border-top:1px solid var(--ink)}
+.tr{padding:11px 0;border-bottom:1px solid var(--line)}
+.tr .l{font-family:var(--alt);font-size:clamp(12px,1.3vw,14.5px)}
+.tr .l small{font-family:var(--alt);font-size:11px;line-height:1.5;margin-top:3px}
+.tr .v{font-family:var(--serif);font-weight:400;font-size:clamp(14px,1.6vw,19px)}
+.tr.head{background:none;padding-top:0}
+.tr.head .l,.tr.head .v{font-family:var(--alt);font-size:9.5px;letter-spacing:.2em}
+.blank{min-width:130px;border-bottom-color:var(--soft)}
+
+/* --- slide 4: the charts --- */
+.ch p{font-family:var(--alt);font-size:11px;line-height:1.5;margin-top:8px}
+
+/* --- slide 5: the briefing paths --- */
+.flow{gap:9px;margin:2px 0 9px}
+.flow i{font-family:var(--serif);font-size:clamp(13px,1.45vw,17px);border:0;background:none;
+     padding:0;font-style:normal}
+.pth.good .flow i{background:none;color:var(--accent)}
+.flow b{font-weight:400}
+.pth p{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);line-height:1.55}
+
+/* --- slide 7: the decision --- */
+.dec{gap:0;margin-top:20px;border-top:1px solid var(--ink)}
+.dc{border:0;background:none;padding:12px 0;gap:0 16px;
+    border-bottom:1px solid var(--line);grid-template-columns:auto 1fr}
+.dc.yes{border-left:0}
+.dc.later{background:none;border-left:0}
+.dc .dn{width:auto;height:auto;background:none;color:var(--soft);
+     font-family:var(--alt);font-weight:600;font-size:9.5px;letter-spacing:.2em;margin-top:3px}
+.dc.yes .dn{color:var(--accent)}
+.dc.later .dn{background:none}
+.dc h4{font-family:var(--sans);font-size:clamp(12px,1.3vw,14px);margin-bottom:3px}
+.dc p{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);line-height:1.55}
+
+/* --- appendix components --- */
+.steps{gap:0;margin-top:20px;border-top:1px solid var(--ink)}
+.st{border:0;background:none;padding:10px 0;border-bottom:1px solid var(--line)}
+.st.opt{background:none;border:0;border-bottom:1px solid var(--line);box-shadow:none}
+.st.go{border:0;border-bottom:1px solid var(--accent);box-shadow:none;background:none}
+.st.go .sn,.st.go .wk{color:var(--accent)}
+.st .sn{font-family:var(--alt);font-weight:600;font-size:9.5px;letter-spacing:.2em}
+.st span{font-family:var(--alt);font-size:clamp(11px,1.2vw,13px);line-height:1.55}
+.st .wk{font-size:9.5px;letter-spacing:.2em;border-left:0}
+.hist{gap:clamp(22px,3.6vw,44px)}
+.hi{border:0;background:none;border-top:1px solid var(--ink)}
+.hi .hw{background:none;padding:11px 0 9px;font-family:var(--alt);font-size:10px;letter-spacing:.18em}
+.hi .then,.hi .now{background:none;border:0;padding:0 0 10px}
+.hi .now.alt{background:none}
+.hi span{font-family:var(--alt);font-size:9px;letter-spacing:.18em}
+.hi p{font-family:var(--alt);font-size:clamp(11px,1.15vw,12.5px);line-height:1.55}
+.tl .tll,.tl .tlbar i{font-family:var(--alt)}
+.legal{border:0;background:none;padding:14px 0 0;border-top:1px solid var(--ink);font-family:var(--alt)}
+.quote{font-size:clamp(14px,1.7vw,19px)}
+
 </style>
 
 <div class="prog"><i id="pg"></i></div>
