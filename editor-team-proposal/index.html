@@ -434,6 +434,71 @@ h2{letter-spacing:-.015em;line-height:1.02}
 .legal{border:0;background:none;padding:14px 0 0;border-top:1px solid var(--ink);font-family:var(--alt)}
 .quote{font-size:clamp(14px,1.7vw,19px)}
 
+/* ============ TYPE SCALE — presentation, not a document ============ */
+h1{font-size:clamp(40px,5.4vw,68px)}
+h2{font-size:clamp(31px,4.1vw,52px)}
+.lede{font-size:clamp(16px,1.8vw,21px);line-height:1.5;max-width:52ch}
+.note{font-size:clamp(13px,1.4vw,16px);line-height:1.5;max-width:60ch}
+.eyebrow{font-size:clamp(10px,1.05vw,11.5px);letter-spacing:.2em}
+.act{font-size:10.5px;letter-spacing:.2em;padding:4px 12px 4px 4px;margin-bottom:20px}
+.act i{width:19px;height:19px;font-size:11px}
+
+.pane h4,.tcard .th,.pth .pl,.ch .chh,.ask .al{font-size:11px;letter-spacing:.2em;margin-bottom:14px}
+.pane li,.tcard li{font-size:clamp(14px,1.55vw,17.5px);line-height:1.5;padding:7px 0}
+.two,.terms,.chart,.paths{gap:clamp(28px,4.6vw,64px);margin-top:26px}
+.pane,.tcard,.pth,.ch{padding-top:15px}
+
+/* slide one: the figures are the ask */
+.asks{gap:clamp(28px,4.6vw,64px);margin-top:30px}
+.ask .av{font-size:clamp(52px,7.4vw,96px);margin:14px 0 12px;letter-spacing:-.03em}
+.ask p{font-size:clamp(13.5px,1.45vw,16.5px);line-height:1.45}
+.chips{gap:12px;margin:16px 0 12px}
+.chips b{font-size:clamp(15px,1.7vw,20px);padding:0 0 5px}
+.strip{margin-top:32px;gap:8px}
+
+/* slide two: the ledger reads at arm's length */
+.tbl{margin-top:26px}
+.tr{padding:15px 0}
+.tr .l{font-size:clamp(17px,2vw,24px);font-family:var(--serif);font-weight:400}
+.tr .l small{font-size:clamp(13px,1.4vw,15.5px);margin-top:5px}
+.tr .v{font-size:clamp(17px,2vw,24px)}
+.tr.head .l,.tr.head .v{font-family:var(--alt);font-size:11px;letter-spacing:.2em}
+
+/* slide three: masthead */
+.ed .lede{font-size:clamp(16px,1.8vw,21px);margin-top:16px}
+.ed .roster{margin-top:22px}
+.ed .pr{padding:9px 0 8px}
+.ed .pname{font-size:clamp(24px,3.1vw,38px)}
+.ed .pname i,.ed .pname em{font-size:10.5px;letter-spacing:.2em}
+.ed .pas{font-size:clamp(13px,1.4vw,15.5px);line-height:1.6}
+.ed .note{font-size:12.5px;margin-top:11px}
+.ed .two{margin-top:24px}
+.ed .pane li{font-size:clamp(14px,1.55vw,17.5px);padding:6px 0}
+
+/* slide four: the two curves */
+.ch svg{height:clamp(110px,15vh,150px)}
+.ch p{font-size:clamp(13px,1.4vw,15.5px);line-height:1.5;margin-top:12px;max-width:34ch}
+
+/* slide five: the briefing routes */
+.flow{gap:12px;margin:4px 0 14px}
+.flow i{font-size:clamp(17px,2.2vw,27px)}
+.flow b{font-size:clamp(15px,1.8vw,20px)}
+.pth p{font-size:clamp(13.5px,1.45vw,16.5px);line-height:1.5}
+
+/* slide eight: the three asks */
+.dec{margin-top:28px}
+.dc{padding:17px 0;gap:0 22px}
+.dc .dn{font-size:11px;letter-spacing:.2em;margin-top:6px}
+.dc h4{font-family:var(--serif);font-weight:400;font-size:clamp(19px,2.3vw,28px);margin-bottom:6px}
+.dc p{font-size:clamp(13.5px,1.45vw,16.5px);line-height:1.5;max-width:62ch}
+
+.pull{display:grid;gap:0 clamp(28px,4.6vw,56px);grid-template-columns:auto 1fr;align-items:end;
+      margin-top:22px;padding-top:16px;border-top:1px solid var(--accent);
+      font-family:var(--serif);font-weight:200;font-size:clamp(24px,3.2vw,40px);
+      line-height:1.08;letter-spacing:-.02em}
+.pull span{display:block;font-family:var(--alt);font-weight:400;font-size:clamp(13px,1.4vw,15.5px);
+      line-height:1.55;letter-spacing:0;color:var(--soft);max-width:44ch;padding-bottom:4px}
+
 </style>
 
 <div class="prog"><i id="pg"></i></div>
@@ -443,18 +508,15 @@ h2{letter-spacing:-.015em;line-height:1.02}
     <div class="inner">
       <div class="act"><i>1</i> The ask</div>
       <h1>A small editing team,<br>instead of rehiring one every event.</h1>
-      <p class="lede">
-        One adaptive editor and one adaptive creative, working alongside me. I handle the
-        sourcing, the training and the standards. <b>Two is my recommendation, not a fixed number.</b>
-      </p>
+      <p class="lede">Working alongside me. I handle the sourcing, the training and the standards.</p>
       <div class="asks">
         <div class="ask">
           <div class="al">How many</div><div class="av num">2</div>
-          <p><b>A test, to add manpower and volume.</b></p>
+          <p>A test, to add manpower and volume</p>
         </div>
         <div class="ask">
           <div class="al">By when</div><div class="av num">4 wks</div>
-          <p>Posting, interviews and trial, decision, then orientation and training.</p>
+          <p>Post, trial, decide, then train</p>
         </div>
         <div class="ask">
           <div class="al">What it changes</div>
@@ -472,9 +534,8 @@ h2{letter-spacing:-.015em;line-height:1.02}
       <div class="eyebrow">Budget</div>
       <h2>Two rates, and what is still open</h2>
       <p class="lede">
-        <b>These are not experience levels.</b> Both can already cut without hand-holding, and both
-        have to be <b>adaptive</b> &mdash; able to work inside a brief that is still moving. What
-        separates them is how much they shape the work.
+        Not experience levels. Both can already cut without hand-holding; <b>both have to be
+        adaptive.</b>
       </p>
       <div class="tbl">
         <div class="tr head"><div class="l">What we are hiring for</div><div class="v">Hourly &middot; per event day (8&ndash;13 hrs)</div></div>
@@ -501,8 +562,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
       <div class="eyebrow">Who runs social media</div>
       <h2>The masthead<br>as it stands today</h2>
       <p class="lede">
-        The work as it is divided today. <b>Possible? Yes &mdash; it is what we have been doing.
-        Sustainable? No.</b>
+        The work as it is divided today.
       </p>
       <div class="roster">
         <div class="pr">
@@ -525,25 +585,10 @@ h2{letter-spacing:-.015em;line-height:1.02}
             Collaboration with the content creator teams &middot; Analysis &amp; data compilation</div>
         </div>
       </div>
-      <p class="note">The content creator teams &mdash; Content Forge, Susan and Sara Tang &mdash; sit outside this list. Coordinating with them is part of the work above.</p>
-      <div class="two">
-        <div class="pane">
-          <h4>Why it does not scale</h4>
-          <ul>
-            <li><b>Two areas have no second person</b> &mdash; social media management and asset management stop if I am out</li>
-            <li>Content production is the only area that <b>grows with volume</b>, and the deadline sits on one person</li>
-            <li><b>Crystal is running marketing as a whole</b> &mdash; the production load has nowhere else to move</li>
-          </ul>
-        </div>
-        <div class="pane go">
-          <h4>What two editors change</h4>
-          <ul>
-            <li>Content production gets <b>real capacity</b>, without the rest slipping</li>
-            <li>We <b>grow the team that does the heavy lifting</b></li>
-            <li>Room for <b>strategy, analysis and systems</b> instead of production</li>
-          </ul>
-        </div>
-      </div>
+      <p class="note">Content Forge, Susan and Sara Tang sit outside this list.</p>
+      <div class="pull">Possible? Yes.<br>Sustainable? No.
+        <span>Two areas have no second person, and only production grows with volume
+        &mdash; the one we can hand over.</span></div>
     </div>
   </section>
 
@@ -553,9 +598,8 @@ h2{letter-spacing:-.015em;line-height:1.02}
       <div class="eyebrow">The problem</div>
       <h2>It is an efficiency problem.<br>The way we run this does not scale.</h2>
       <p class="lede">
-        We rotate through editors event to event. Each starts from zero &mdash; our events, our
-        editing style, what counts as a strong reference &mdash; and all of it gets re-explained.
-        It gets us through an event, <b>but it does not scale.</b>
+        Every editor starts from zero, so all of it gets re-explained. It gets us through an
+        event &mdash; <b>but it does not scale.</b>
       </p>
       <div class="chart">
         <div class="ch">
@@ -569,7 +613,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
               <text x="168" y="10">event 3</text><text x="248" y="10">event 4</text>
             </g>
           </svg>
-          <p>Back to zero every time.</p>
+          <p>Back to zero every time. Quality swings, and the learning leaves with the editor.</p>
         </div>
         <div class="ch on">
           <div class="chh">A standing team</div>
@@ -584,27 +628,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
               <text x="168" y="10">event 3</text><text x="248" y="10">event 4</text>
             </g>
           </svg>
-          <p>Each event starts where the last one finished.</p>
-        </div>
-      </div>
-      <div class="two">
-        <div class="pane">
-          <h4>What that costs us every event</h4>
-          <ul>
-            <li>Output slows while people get up to speed</li>
-            <li>Quality swings event to event</li>
-            <li>Revisions repeat the same corrections</li>
-            <li>The learning leaves when the editor does</li>
-          </ul>
-        </div>
-        <div class="pane go">
-          <h4>What a standing team changes</h4>
-          <ul>
-            <li><b>Understanding compounds</b> instead of resetting</li>
-            <li>Second event is faster than the first</li>
-            <li>Corrections are made once, not every event</li>
-            <li>Quality becomes predictable</li>
-          </ul>
+          <p>Each event starts where the last finished. Corrections are made once, not every time.</p>
         </div>
       </div>
     </div>
@@ -616,8 +640,8 @@ h2{letter-spacing:-.015em;line-height:1.02}
       <div class="eyebrow">What I build, and who we look for</div>
       <h2>Not all editors can adapt.<br>That is what we are hiring for.</h2>
       <p class="lede">
-        Our content passes through several people, and we are still working out how it should run.
-        <b>That has to be taught, and they have to move with it.</b>
+        Our content passes through several people, and how it runs is still moving.
+        <b>That has to be taught.</b>
       </p>
       <div class="paths">
         <div class="pth bad">
@@ -635,21 +659,18 @@ h2{letter-spacing:-.015em;line-height:1.02}
         <div class="pane">
           <h4>Full training, not a handover</h4>
           <ul>
-            <li><b>Reading outliers</b>, and sourcing them independently</li>
+            <li><b>Reading outliers</b>, and sourcing them</li>
             <li><b>AI</b> and the tools we use</li>
             <li><b>Nancy captions</b> and on-screen text</li>
-            <li>The <b>editing brief</b> &mdash; I started it, Crystal and Susan finished it &mdash; and its standards</li>
-            <li><b>How our content moves</b> &mdash; who it passes through, and why</li>
-            <li>Whatever else we need as this grows</li>
+            <li>The <b>editing brief</b>, and how our content moves</li>
           </ul>
         </div>
         <div class="pane">
           <h4>Why it has to be adaptive</h4>
           <ul>
-            <li>We keep learning and adapting our processes and briefs. We need <b>people who work well inside that</b></li>
-            <li><b>Editors pulled from clipping queues are a hindrance</b>, not a shortcut &mdash; they arrive with someone else&rsquo;s habits</li>
-            <li><b>Crystal and I are living these changes.</b> The brief should come straight from us</li>
-            <li>Adaptive, not passive. Invested in improving, not just executing</li>
+            <li>We keep adapting our processes and briefs. We need <b>people who work well inside that</b></li>
+            <li><b>Borrowed clippers arrive with someone else&rsquo;s habits.</b></li>
+            <li>Adaptive, not passive.</li>
           </ul>
         </div>
       </div>
@@ -666,7 +687,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
           <h4>How it goes now</h4>
           <ul>
             <li>Availability decides it, because the event is close</li>
-            <li>A portfolio shows someone&rsquo;s best work, not how they work</li>
+            <li>A portfolio shows their best work, not how they work</li>
             <li>We find out what they can do once it matters</li>
           </ul>
         </div>
@@ -680,17 +701,16 @@ h2{letter-spacing:-.015em;line-height:1.02}
         </div>
       </div>
       <p class="note">
-        <b>No commitment before we have seen their output.</b> A trial day is cheap.
-        Finding out mid-event is not.
+        <b>A trial day is cheap. Finding out mid-event is not.</b>
       </p>
     </div>
   </section>
 
   <section class="slide">
     <div class="inner">
-      <div class="act"><i>5</i> Decision</div>
-      <div class="eyebrow">Decision</div>
-      <h2>What is fixed, what is open,<br>and what I need today</h2>
+      <div class="act"><i>4</i> Preventing the risk</div>
+      <div class="eyebrow">Terms</div>
+      <h2>What is fixed,<br>and what we can shape</h2>
       <div class="terms">
         <div class="tcard fixed">
           <div class="th">Nonnegotiable</div>
@@ -698,8 +718,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
             <li><b>Confidentiality</b> on unreleased footage, event content and brand assets</li>
             <li><b>Clear scope per engagement</b> &mdash; cutting, captions, overlays and our standards in; filming and licensed music out</li>
             <li><b>Ownership</b> &mdash; final files and source footage are the company&rsquo;s once paid</li>
-            <li><b>Responsiveness</b> during live event hours</li>
-            <li><b>Firm deadline</b> on event-day deliverables, same or next day</li>
+            <li><b>Firm deadlines</b> during live event hours</li>
           </ul>
         </div>
         <div class="tcard open">
@@ -708,13 +727,19 @@ h2{letter-spacing:-.015em;line-height:1.02}
             <li>Pay structure &mdash; hourly, day rate or per deliverable</li>
             <li>Revision rounds before extra charges</li>
             <li>Turnaround on evergreen content</li>
-            <li>Exclusivity between events</li>
             <li>Conversion criteria and timeline</li>
-            <li>Equipment and software provided or self-supplied</li>
             <li>Payment schedule</li>
           </ul>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section class="slide">
+    <div class="inner">
+      <div class="act"><i>5</i> Decision</div>
+      <div class="eyebrow">Decision</div>
+      <h2>What I need<br>from you today</h2>
       <div class="dec">
         <div class="dc yes"><div class="dn">1</div><div><h4>Approve the paid trial days.</h4>
           <p>Up to four candidates, one paid day each. <b>That is the entire spend being approved
@@ -881,7 +906,7 @@ h2{letter-spacing:-.015em;line-height:1.02}
   <span class="who">Editor team proposal</span>
   <span class="sp"></span>
   <button type="button" id="prev">&larr; Back</button>
-  <span class="n" id="n">1 / 7</span>
+  <span class="n" id="n">1 / 8</span>
   <button type="button" id="next">Next &rarr;</button>
 </div>
 
@@ -895,7 +920,7 @@ let i = 0;
 function show(n){
   i = Math.max(0, Math.min(slides.length - 1, n));
   slides.forEach((s, k) => s.classList.toggle("on", k === i));
-  const LIVE = 7;
+  const LIVE = 8;
   document.getElementById("n").textContent =
     i < LIVE ? (i + 1) + " / " + LIVE
              : "Appendix " + (i - LIVE + 1) + " / " + (slides.length - LIVE);
